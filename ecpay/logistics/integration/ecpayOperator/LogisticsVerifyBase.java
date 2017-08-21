@@ -145,6 +145,9 @@ public class LogisticsVerifyBase {
 					throw new EcpayException("ReceiverStoreID cannot be empty when LogisticsSubType is UNIMARTC2C.");
 			// [LogisticsSubType]為FAMIC2C => FAMIC2C相關規則
 			} else if(((CreateCVSObj) obj).getLogisticsSubType().equals("FAMIC2C")){
+				// [LogisticsSubType]為FAMIC2C => ReceiverCellPhone Cannot be empty
+				if(((CreateCVSObj) obj).getReceiverCellPhone().isEmpty())
+					throw new EcpayException("ReceiverCellPhone cannot be empty when LogisticsSubType is FAMIC2C.");
 				// [LogisticsSubType]為FAMIC2C => ReturnStoreID Can Not be empty
 				if(((CreateCVSObj) obj).getReceiverStoreID().isEmpty())
 					throw new EcpayException("ReceiverStoreID cannot be empty when LogisticsSubType is FAMIC2C.");
