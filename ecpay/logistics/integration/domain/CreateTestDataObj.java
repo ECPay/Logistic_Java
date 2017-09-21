@@ -1,7 +1,7 @@
 package ecpay.logistics.integration.domain;
 
 /**
- * ²£¥Í B2C ´ú¼Ğ¸ê®Æª«¥ó
+ * ç”¢ç”Ÿ B2C æ¸¬æ¨™è³‡æ–™ç‰©ä»¶
  * @author mark.chiu
  *
  */
@@ -9,89 +9,89 @@ public class CreateTestDataObj {
 	
 	/**
 	 * MerchantID
-	 * ¼t°Ó½s¸¹
+	 * å» å•†ç·¨è™Ÿ
 	 */
 	private String MerchantID = "";
 	
 	/**
 	 * ClientReplyURL
-	 * Client ºİ¦^ÂĞºô§}
+	 * Client ç«¯å›è¦†ç¶²å€
 	 */
 	private String ClientReplyURL = "";
 	
 	/**
 	 * PlatformID
-	 * ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹
+	 * ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ
 	 */
 	private String PlatformID = "";
 	
 	/**
 	 * LogisticsSubType
-	 * ª«¬y¤lÃş«¬
+	 * ç‰©æµå­é¡å‹
 	 */
 	private String LogisticsSubType = "";
 	
 	/********************* getters and setters *********************/
 	
 	/**
-	 * ¨ú±oMerchantID ¼t°Ó½s¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ
+	 * å–å¾—MerchantID å» å•†ç·¨è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›
 	 * @return MerchantID
 	 */
 	public String getMerchantID() {
 		return MerchantID;
 	}
 	/**
-	 * ³]©wMerchantID ¼t°Ó½s¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ
+	 * è¨­å®šMerchantID å» å•†ç·¨è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›
 	 * @param merchantID
 	 */
 	public void setMerchantID(String merchantID) {
 		MerchantID = merchantID;
 	}
 	/**
-	 * ¨ú±oClientReplyURL Client ºİ¦^ÂĞºô§} ¦¹°Ñ¼Æ¤£¬°ªÅ®É¡A·íª«¬y­q³æ«Ø¥ß«á·|±N­¶­±¾É¦Ü¦¹ URL¡C 
+	 * å–å¾—ClientReplyURL Client ç«¯å›è¦†ç¶²å€ æ­¤åƒæ•¸ä¸ç‚ºç©ºæ™‚ï¼Œç•¶ç‰©æµè¨‚å–®å»ºç«‹å¾Œæœƒå°‡é é¢å°è‡³æ­¤ URLã€‚ 
 	 * @return ClientReplyURL
 	 */
 	public String getClientReplyURL() {
 		return ClientReplyURL;
 	}
 	/**
-	 * ³]©wClientReplyURL Client ºİ¦^ÂĞºô§} ¦¹°Ñ¼Æ¤£¬°ªÅ®É¡A·íª«¬y­q³æ«Ø¥ß«á·|±N­¶­±¾É¦Ü¦¹ URL¡C 
+	 * è¨­å®šClientReplyURL Client ç«¯å›è¦†ç¶²å€ æ­¤åƒæ•¸ä¸ç‚ºç©ºæ™‚ï¼Œç•¶ç‰©æµè¨‚å–®å»ºç«‹å¾Œæœƒå°‡é é¢å°è‡³æ­¤ URLã€‚ 
 	 * @param clientReplyURL
 	 */
 	public void setClientReplyURL(String clientReplyURL) {
 		ClientReplyURL = clientReplyURL;
 	}
 	/**
-	 * ¨ú±oPlatformID ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ¡A¦¹°Ñ¼Æ¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î¡A¤@¯ë¼t°Ó¤¶±µ½Ğ©ñªÅ­È¡C­Y¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î®É¡AMerchantID ½Ğ±a½æ®a©Ò¸j©wªºMerchantID¡C
+	 * å–å¾—PlatformID ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›ï¼Œæ­¤åƒæ•¸ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨ï¼Œä¸€èˆ¬å» å•†ä»‹æ¥è«‹æ”¾ç©ºå€¼ã€‚è‹¥ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨æ™‚ï¼ŒMerchantID è«‹å¸¶è³£å®¶æ‰€ç¶å®šçš„MerchantIDã€‚
 	 * @return PlatformID
 	 */
 	public String getPlatformID() {
 		return PlatformID;
 	}
 	/**
-	 * ³]©wPlatformID ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ¡A¦¹°Ñ¼Æ¬°±M®×¦X§@ªº ¥­¥x°Ó¨Ï¥Î¡A¤@¯ë¼t°Ó¤¶±µ½Ğ©ñªÅ­È¡C­Y¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î®É¡AMerchantID ½Ğ±a½æ®a©Ò¸j©wªºMerchantID¡C
+	 * è¨­å®šPlatformID ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›ï¼Œæ­¤åƒæ•¸ç‚ºå°ˆæ¡ˆåˆä½œçš„ å¹³å°å•†ä½¿ç”¨ï¼Œä¸€èˆ¬å» å•†ä»‹æ¥è«‹æ”¾ç©ºå€¼ã€‚è‹¥ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨æ™‚ï¼ŒMerchantID è«‹å¸¶è³£å®¶æ‰€ç¶å®šçš„MerchantIDã€‚
 	 * @param platformID
 	 */
 	public void setPlatformID(String platformID) {
 		PlatformID = platformID;
 	}
 	/**
-	 * ¨ú±oLogisticsSubType ª«¬y¤lÃş«¬
+	 * å–å¾—LogisticsSubType ç‰©æµå­é¡å‹
 	 * ---B2C--- 
-	 * FAMI¡G¥ş®a
-	 * UNIMART¡G²Î¤@¶W°Ó
-	 * HILIFE¡GµÜº¸´I
+	 * FAMIï¼šå…¨å®¶
+	 * UNIMARTï¼šçµ±ä¸€è¶…å•†
+	 * HILIFEï¼šèŠçˆ¾å¯Œ
 	 * @return LogisticsSubType
 	 */
 	public String getLogisticsSubType() {
 		return LogisticsSubType;
 	}
 	/**
-	 * ³]©wLogisticsSubType ª«¬y¤lÃş«¬
+	 * è¨­å®šLogisticsSubType ç‰©æµå­é¡å‹
 	 * ---B2C--- 
-	 * FAMI¡G¥ş®a
-	 * UNIMART¡G²Î¤@¶W°Ó
-	 * HILIFE¡GµÜº¸´I
+	 * FAMIï¼šå…¨å®¶
+	 * UNIMARTï¼šçµ±ä¸€è¶…å•†
+	 * HILIFEï¼šèŠçˆ¾å¯Œ
 	 * @param logisticsSubType
 	 */
 	public void setLogisticsSubType(String logisticsSubType) {

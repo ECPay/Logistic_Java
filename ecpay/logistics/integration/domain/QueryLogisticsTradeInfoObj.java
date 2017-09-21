@@ -1,7 +1,7 @@
 package ecpay.logistics.integration.domain;
 
 /**
- * ª«¬y­q³æ¬d¸ßª«¥ó
+ * ç‰©æµè¨‚å–®æŸ¥è©¢ç‰©ä»¶
  * @author mark.chiu
  *
  */
@@ -9,81 +9,81 @@ public class QueryLogisticsTradeInfoObj {
 	
 	/**
 	 * MerchantID
-	 * ¼t°Ó½s¸¹
+	 * å» å•†ç·¨è™Ÿ
 	 */
 	private String MerchantID = "";
 	
 	/**
 	 * AllPayLogisticsID
-	 * ºñ¬É¬ì§Şªºª«¬y¥æ©ö½s¸¹
+	 * ç¶ ç•Œç§‘æŠ€çš„ç‰©æµäº¤æ˜“ç·¨è™Ÿ
 	 */
 	private String AllPayLogisticsID = "";
 	
 	/**
 	 * TimeStamp
-	 * ÅçÃÒ®É¶¡
+	 * é©—è­‰æ™‚é–“
 	 */
 	private String TimeStamp = "";
 	
 	/**
 	 * PlatformID
-	 * ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹
+	 * ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ
 	 */
 	private String PlatformID = "";
 	
 	/********************* getters and setters *********************/
 	
 	/**
-	 * ¨ú±oMerchantID ¼t°Ó½s¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ
+	 * å–å¾—MerchantID å» å•†ç·¨è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›
 	 * @return MerchantID
 	 */
 	public String getMerchantID() {
 		return MerchantID;
 	}
 	/**
-	 * ³]©wMerchantID ¼t°Ó½s¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ
+	 * è¨­å®šMerchantID å» å•†ç·¨è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›
 	 * @param merchantID
 	 */
 	public void setMerchantID(String merchantID) {
 		MerchantID = merchantID;
 	}
 	/**
-	 * ¨ú±oAllPayLogisticsID ºñ¬É¬ì§Şªºª«¬y¥æ©ö½s¸¹
+	 * å–å¾—AllPayLogisticsID ç¶ ç•Œç§‘æŠ€çš„ç‰©æµäº¤æ˜“ç·¨è™Ÿ
 	 * @return AllPayLogisticsID
 	 */
 	public String getAllPayLogisticsID() {
 		return AllPayLogisticsID;
 	}
 	/**
-	 * ³]©wAllPayLogisticsID ºñ¬É¬ì§Şªºª«¬y¥æ©ö½s¸¹
+	 * è¨­å®šAllPayLogisticsID ç¶ ç•Œç§‘æŠ€çš„ç‰©æµäº¤æ˜“ç·¨è™Ÿ
 	 * @param allPayLogisticsID
 	 */
 	public void setAllPayLogisticsID(String allPayLogisticsID) {
 		AllPayLogisticsID = allPayLogisticsID;
 	}
 	/**
-	 * ¨ú±oTimeStamp ÅçÃÒ®É¶¡ ±N·í¤Uªº®É¶¡Âà¬° UnixTimeStamp ¥Î©óÅçÃÒ¦¹¦¸¤¶±µªº®É¶¡°Ï¶¡¡Cºñ¬É¬ì§ŞÅçÃÒ®É¶¡°Ï¶¡¼È­q¬° 3 ¤ÀÄÁ¤º¦³®Ä¡A¶W¹L«h¦¹¦¸¤¶±µµL®Ä¡C
+	 * å–å¾—TimeStamp é©—è­‰æ™‚é–“ å°‡ç•¶ä¸‹çš„æ™‚é–“è½‰ç‚º UnixTimeStamp ç”¨æ–¼é©—è­‰æ­¤æ¬¡ä»‹æ¥çš„æ™‚é–“å€é–“ã€‚ç¶ ç•Œç§‘æŠ€é©—è­‰æ™‚é–“å€é–“æš«è¨‚ç‚º 3 åˆ†é˜å…§æœ‰æ•ˆï¼Œè¶…éå‰‡æ­¤æ¬¡ä»‹æ¥ç„¡æ•ˆã€‚
 	 * @return TimeStamp
 	 */
 	public String getTimeStamp() {
 		return TimeStamp;
 	}
 	/**
-	 * ³]©wTimeStamp ÅçÃÒ®É¶¡ ±N·í¤Uªº®É¶¡Âà¬° UnixTimeStamp ¥Î©óÅçÃÒ¦¹¦¸¤¶±µªº®É¶¡°Ï¶¡¡Cºñ¬É¬ì§ŞÅçÃÒ®É¶¡°Ï¶¡¼È­q¬° 3 ¤ÀÄÁ¤º¦³®Ä¡A¶W¹L«h¦¹¦¸¤¶±µµL®Ä¡C
+	 * è¨­å®šTimeStamp é©—è­‰æ™‚é–“ å°‡ç•¶ä¸‹çš„æ™‚é–“è½‰ç‚º UnixTimeStamp ç”¨æ–¼é©—è­‰æ­¤æ¬¡ä»‹æ¥çš„æ™‚é–“å€é–“ã€‚ç¶ ç•Œç§‘æŠ€é©—è­‰æ™‚é–“å€é–“æš«è¨‚ç‚º 3 åˆ†é˜å…§æœ‰æ•ˆï¼Œè¶…éå‰‡æ­¤æ¬¡ä»‹æ¥ç„¡æ•ˆã€‚
 	 * @param timeStamp
 	 */
 	public void setTimeStamp(String timeStamp) {
 		TimeStamp = timeStamp;
 	}
 	/**
-	 * ¨ú±ogetPlatformID ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ¡A¦¹°Ñ¼Æ¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î¡A¤@¯ë¼t°Ó¤¶±µ½Ğ©ñªÅ­È¡C­Y¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î®É¡AMerchantID ½Ğ±a½æ®a©Ò¸j©wªºMerchantID¡C
+	 * å–å¾—getPlatformID ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›ï¼Œæ­¤åƒæ•¸ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨ï¼Œä¸€èˆ¬å» å•†ä»‹æ¥è«‹æ”¾ç©ºå€¼ã€‚è‹¥ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨æ™‚ï¼ŒMerchantID è«‹å¸¶è³£å®¶æ‰€ç¶å®šçš„MerchantIDã€‚
 	 * @return getPlatformID
 	 */
 	public String getPlatformID() {
 		return PlatformID;
 	}
 	/**
-	 * ³]©wgetPlatformID ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ¡A¦¹°Ñ¼Æ¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î¡A¤@¯ë¼t°Ó¤¶±µ½Ğ©ñªÅ­È¡C­Y¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î®É¡AMerchantID ½Ğ±a½æ®a©Ò¸j©wªºMerchantID¡C
+	 * è¨­å®šgetPlatformID ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›ï¼Œæ­¤åƒæ•¸ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨ï¼Œä¸€èˆ¬å» å•†ä»‹æ¥è«‹æ”¾ç©ºå€¼ã€‚è‹¥ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨æ™‚ï¼ŒMerchantID è«‹å¸¶è³£å®¶æ‰€ç¶å®šçš„MerchantIDã€‚
 	 * @param platformID
 	 */
 	public void setPlatformID(String platformID) {

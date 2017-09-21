@@ -8,39 +8,39 @@ public class SampleCode {
 	private AllInOne all;
 	
 	public void initial(){
-		//¦¹¨BÆJ¬°³z¹LAllInOne«Øºc¤l¨Ó¹êÅé¤Æ¦¹Ãş§O¡A¶¶«K¿é¤Jlog4j.propertiesªº¦ì¸m¸ô®|
-		//­Y¤£»İ­n²£¥ÍlogÀÉ¡A¥iª½±µ¦blog4j.properties§ó§ï³]©w¡A©Î¬O±N¦¹¨BÆJ©Ò¿é¤Jªº¦r¦ê§ï¬°""¡A©Î¤£¶Ç¥ô¦ó°Ñ¼Æ
+		//æ­¤æ­¥é©Ÿç‚ºé€éAllInOneå»ºæ§‹å­ä¾†å¯¦é«”åŒ–æ­¤é¡åˆ¥ï¼Œé †ä¾¿è¼¸å…¥log4j.propertiesçš„ä½ç½®è·¯å¾‘
+		//è‹¥ä¸éœ€è¦ç”¢ç”Ÿlogæª”ï¼Œå¯ç›´æ¥åœ¨log4j.propertiesæ›´æ”¹è¨­å®šï¼Œæˆ–æ˜¯å°‡æ­¤æ­¥é©Ÿæ‰€è¼¸å…¥çš„å­—ä¸²æ”¹ç‚º""ï¼Œæˆ–ä¸å‚³ä»»ä½•åƒæ•¸
 		all = new AllInOne("XXX/OOO");
 	}
 	
 	public String sampleCreateCVS(){
 		initial();
-		//¹êÅé¤Æ¥X©Ò»İ­nªºdomainª«¥ó
+		//å¯¦é«”åŒ–å‡ºæ‰€éœ€è¦çš„domainç‰©ä»¶
 		CreateCVSObj obj = new CreateCVSObj();
-		//«ØÄ³±q«áºİ¼´¨ú¥æ©ö­q³æ¸ê®Æ¡Aª«±q«eºİ¿é¤J¥H§K¾DÂ«§ï
+		//å»ºè­°å¾å¾Œç«¯æ’ˆå–äº¤æ˜“è¨‚å–®è³‡æ–™ï¼Œç‰©å¾å‰ç«¯è¼¸å…¥ä»¥å…é­ç«„æ”¹
 		obj.setMerchantTradeNo("XXX");
 		obj.setMerchantTradeDate("XXXX/XX/XX XX:XX:XX");
 		
-		//¥i¥H±q«eºİ¨Ï¥ÎªÌ¶ñ¤J¸ê®Æ
+		//å¯ä»¥å¾å‰ç«¯ä½¿ç”¨è€…å¡«å…¥è³‡æ–™
 		obj.setSenderName("XXX");
 		obj.setSenderCellPhone("09XXXXXXXX");
 		
-		//¥H¤W¸ê®Æ¤£§¹¥ş¡A¶È¨Ñ°Ñ¦Ò¦p¦ó©ñ¤J¸ê®Æ
+		//ä»¥ä¸Šè³‡æ–™ä¸å®Œå…¨ï¼Œåƒ…ä¾›åƒè€ƒå¦‚ä½•æ”¾å…¥è³‡æ–™
 		
-		//©I¥sAllInOne¤¤¬ÛÀ³ªºmethod¡A¸Ómethod·|À°¦£¥´API¨Ã¦^¶Ç¦^À³ªºµ²ªG
+		//å‘¼å«AllInOneä¸­ç›¸æ‡‰çš„methodï¼Œè©²methodæœƒå¹«å¿™æ‰“APIä¸¦å›å‚³å›æ‡‰çš„çµæœ
 		String result = all.create(obj);
 		return result;
 	}
 	
 	public String samplePrintHiLifeCVS(){
 		initial();
-		//¹êÅé¤Æ¥X©Ò»İ­nªºdomainª«¥ó
+		//å¯¦é«”åŒ–å‡ºæ‰€éœ€è¦çš„domainç‰©ä»¶
 		PrintHILIFEC2COrderInfoObj obj = new PrintHILIFEC2COrderInfoObj();
-		//«ØÄ³±q«áºİDB¼´¨ú¸ê®Æ¶ñ¤J¡A¤Å±q«eºİ¿é¤J¥H§K¾DÂ«§ï
+		//å»ºè­°å¾å¾Œç«¯DBæ’ˆå–è³‡æ–™å¡«å…¥ï¼Œå‹¿å¾å‰ç«¯è¼¸å…¥ä»¥å…é­ç«„æ”¹
 		obj.setAllPayLogisticsID("XXX");
 		obj.setCVSPaymentNo("XXX");
 		
-		//©I¥sAllInOne¤¤¬ÛÀ³ªºmethod¡A²£¥Íhtml form¦r¦ê(§tJavaScript Submit)¤§«á¦A©ñ¤J«eºİ§Y¥i
+		//å‘¼å«AllInOneä¸­ç›¸æ‡‰çš„methodï¼Œç”¢ç”Ÿhtml formå­—ä¸²(å«JavaScript Submit)ä¹‹å¾Œå†æ”¾å…¥å‰ç«¯å³å¯
 		String html = all.printHILIFEC2COrderInfo(obj);
 		return html;
 	}

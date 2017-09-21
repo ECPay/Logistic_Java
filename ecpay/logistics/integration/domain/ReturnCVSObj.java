@@ -1,7 +1,7 @@
 package ecpay.logistics.integration.domain;
 
 /**
- * ¶W°Ó¨ú³f°fª«¬y­q³æª«¥ó
+ * è¶…å•†å–è²¨é€†ç‰©æµè¨‚å–®ç‰©ä»¶
  * @author mark.chiu
  *
  */
@@ -9,261 +9,261 @@ public class ReturnCVSObj {
 	
 	/**
 	 * MerchantID
-	 * ¼t°Ó½s¸¹
+	 * å» å•†ç·¨è™Ÿ
 	 */
 	private String MerchantID = "";
 	
 	/**
 	 * AllPayLogisticsID
-	 * ºñ¬É¬ì§Şªºª«¬y¥æ©ö½s¸¹
+	 * ç¶ ç•Œç§‘æŠ€çš„ç‰©æµäº¤æ˜“ç·¨è™Ÿ
 	 */
 	private String AllPayLogisticsID = "";
 	
 	/**
 	 * ServerReplyURL
-	 * Server ºİ¦^ÂĞºô§}
+	 * Server ç«¯å›è¦†ç¶²å€
 	 */
 	private String ServerReplyURL = "";
 	
 	/**
 	 * GoodsName
-	 * °Ó«~¦WºÙ
+	 * å•†å“åç¨±
 	 */
 	private String GoodsName = "";
 	
 	/**
 	 * GoodsAmount
-	 * °Ó«~ª÷ÃB
+	 * å•†å“é‡‘é¡
 	 */
 	private String GoodsAmount = "";
 	
 	/**
 	 * CollectionAmount
-	 * ¥N¦¬ª÷ÃB
+	 * ä»£æ”¶é‡‘é¡
 	 */
 	private String CollectionAmount = "0";
 	
 	/**
 	 * ServiceType
-	 * ªA°È«¬ºA¥N½X
+	 * æœå‹™å‹æ…‹ä»£ç¢¼
 	 */
 	private String ServiceType = "4";
 	
 	/**
 	 * SenderName
-	 * ±H¥ó¤H©m¦W
+	 * å¯„ä»¶äººå§“å
 	 */
 	private String SenderName = "";
 	
 	/**
 	 * SenderPhone
-	 * °h³f¤H¹q¸Ü
+	 * é€€è²¨äººé›»è©±
 	 */
 	private String SenderPhone = "";
 	
 	/**
 	 * Remark
-	 * ³Æµù
+	 * å‚™è¨»
 	 */
 	private String Remark = "";
 	
 	/**
 	 * Quantity
-	 * ¼Æ¶q
+	 * æ•¸é‡
 	 */
 	private String Quantity = "";
 	
 	/**
 	 * Cost
-	 * ¦¨¥»
+	 * æˆæœ¬
 	 */
 	private String Cost = "";
 	
 	/**
 	 * PlatformID
-	 * ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹
+	 * ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ
 	 */
 	private String PlatformID = "";
 	
 	/********************* getters and setters *********************/
 	
 	/**
-	 * ¨ú±oMerchantID ¼t°Ó½s¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ
+	 * å–å¾—MerchantID å» å•†ç·¨è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›
 	 * @return MerchantID
 	 */
 	public String getMerchantID() {
 		return MerchantID;
 	}
 	/**
-	 * ³]©wMerchantID ¼t°Ó½s¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ
+	 * è¨­å®šMerchantID å» å•†ç·¨è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›
 	 * @param merchantID
 	 */
 	public void setMerchantID(String merchantID) {
 		MerchantID = merchantID;
 	}
 	/**
-	 * ¨ú±oAllPayLogisticsID ºñ¬É¬ì§Şªºª«¬y¥æ©ö½s¸¹ ¶È­­¼Æ¦r¡A¤£¥i¨Ï¥Î¯S®í²Å¸¹¡B­^¤å
+	 * å–å¾—AllPayLogisticsID ç¶ ç•Œç§‘æŠ€çš„ç‰©æµäº¤æ˜“ç·¨è™Ÿ åƒ…é™æ•¸å­—ï¼Œä¸å¯ä½¿ç”¨ç‰¹æ®Šç¬¦è™Ÿã€è‹±æ–‡
 	 * @return AllPayLogisticsID
 	 */
 	public String getAllPayLogisticsID() {
 		return AllPayLogisticsID;
 	}
 	/**
-	 * ³]©wAllPayLogisticsID ºñ¬É¬ì§Şªºª«¬y¥æ©ö½s¸¹ ¶È­­¼Æ¦r¡A¤£¥i¨Ï¥Î¯S®í²Å¸¹¡B­^¤å
+	 * è¨­å®šAllPayLogisticsID ç¶ ç•Œç§‘æŠ€çš„ç‰©æµäº¤æ˜“ç·¨è™Ÿ åƒ…é™æ•¸å­—ï¼Œä¸å¯ä½¿ç”¨ç‰¹æ®Šç¬¦è™Ÿã€è‹±æ–‡
 	 * @param allPayLogisticsID
 	 */
 	public void setAllPayLogisticsID(String allPayLogisticsID) {
 		AllPayLogisticsID = allPayLogisticsID;
 	}
 	/**
-	 * ¨ú±oServerReplyURL Server ºİ¦^ÂĞºô§} °fª«¬yª¬ºA³£·|³z¹L¦¹ URL ³qª¾¡C
+	 * å–å¾—ServerReplyURL Server ç«¯å›è¦†ç¶²å€ é€†ç‰©æµç‹€æ…‹éƒ½æœƒé€éæ­¤ URL é€šçŸ¥ã€‚
 	 * @return ServerReplyURL
 	 */
 	public String getServerReplyURL() {
 		return ServerReplyURL;
 	}
 	/**
-	 * ³]©wServerReplyURL Server ºİ¦^ÂĞºô§}  °fª«¬yª¬ºA³£·|³z¹L¦¹ URL ³qª¾¡C
+	 * è¨­å®šServerReplyURL Server ç«¯å›è¦†ç¶²å€  é€†ç‰©æµç‹€æ…‹éƒ½æœƒé€éæ­¤ URL é€šçŸ¥ã€‚
 	 * @param serverReplyURL
 	 */
 	public void setServerReplyURL(String serverReplyURL) {
 		ServerReplyURL = serverReplyURL;
 	}
 	/**
-	 * ¨ú±oGoodsName °Ó«~¦WºÙ ­Y¦³¦h­Ó°Ó«~½Ğ¥Î#¤À¹j¡A¤£¥i¦³³æ¤Ş¸¹©ÎÂù¤Ş¸¹¡C
+	 * å–å¾—GoodsName å•†å“åç¨± è‹¥æœ‰å¤šå€‹å•†å“è«‹ç”¨#åˆ†éš”ï¼Œä¸å¯æœ‰å–®å¼•è™Ÿæˆ–é›™å¼•è™Ÿã€‚
 	 * @return GoodsName
 	 */
 	public String getGoodsName() {
 		return GoodsName;
 	}
 	/**
-	 * ³]©wGoodsName °Ó«~¦WºÙ ­Y¦³¦h­Ó°Ó«~½Ğ¥Î#¤À¹j¡A¤£¥i¦³³æ¤Ş¸¹©ÎÂù¤Ş¸¹¡C
+	 * è¨­å®šGoodsName å•†å“åç¨± è‹¥æœ‰å¤šå€‹å•†å“è«‹ç”¨#åˆ†éš”ï¼Œä¸å¯æœ‰å–®å¼•è™Ÿæˆ–é›™å¼•è™Ÿã€‚
 	 * @param goodsName
 	 */
 	public void setGoodsName(String goodsName) {
 		GoodsName = goodsName;
 	}
 	/**
-	 * ¨ú±oGoodsAmount °Ó«~ª÷ÃB ª÷ÃB½d³ò¬° 1~20,000 ¤¸ °Ó«~¿ò¥¢½ßÀv¨Ì¾Ú¡A¶È¥i¨Ï¥Î¼Æ¦r
+	 * å–å¾—GoodsAmount å•†å“é‡‘é¡ é‡‘é¡ç¯„åœç‚º 1~20,000 å…ƒ å•†å“éºå¤±è³ å„Ÿä¾æ“šï¼Œåƒ…å¯ä½¿ç”¨æ•¸å­—
 	 * @return GoodsAmount
 	 */
 	public String getGoodsAmount() {
 		return GoodsAmount;
 	}
 	/**
-	 * ³]©wGoodsAmount °Ó«~ª÷ÃB ª÷ÃB½d³ò¬° 1~20,000 ¤¸ °Ó«~¿ò¥¢½ßÀv¨Ì¾Ú¡A¶È¥i¨Ï¥Î¼Æ¦r
+	 * è¨­å®šGoodsAmount å•†å“é‡‘é¡ é‡‘é¡ç¯„åœç‚º 1~20,000 å…ƒ å•†å“éºå¤±è³ å„Ÿä¾æ“šï¼Œåƒ…å¯ä½¿ç”¨æ•¸å­—
 	 * @param goodsAmount
 	 */
 	public void setGoodsAmount(String goodsAmount) {
 		GoodsAmount = goodsAmount;
 	}
 	/**
-	 * ¨ú±oCollectionAmount ¥N¦¬ª÷ÃB
+	 * å–å¾—CollectionAmount ä»£æ”¶é‡‘é¡
 	 * @return CollectionAmount
 	 */
 	public String getCollectionAmount() {
 		return CollectionAmount;
 	}
 //	/**
-//	 * ³]©wCollectionAmount ¥N¦¬ª÷ÃB
+//	 * è¨­å®šCollectionAmount ä»£æ”¶é‡‘é¡
 //	 * @param collectionAmount
 //	 */
 //	public void setCollectionAmount(String collectionAmount) {
 //		CollectionAmount = collectionAmount;
 //	}
 	/**
-	 * ¨ú±oServiceType ªA°È«¬ºA¥N½X
+	 * å–å¾—ServiceType æœå‹™å‹æ…‹ä»£ç¢¼
 	 * @return ServiceType
 	 */
 	public String getServiceType() {
 		return ServiceType;
 	}
 //	/**
-//	 * ³]©wServiceType
+//	 * è¨­å®šServiceType
 //	 * @param serviceType
 //	 */
 //	public void setServiceType(String serviceType) {
 //		ServiceType = serviceType;
 //	}
 	/**
-	 * ¨ú±oSenderName ±H¥ó¤H©m¦W
+	 * å–å¾—SenderName å¯„ä»¶äººå§“å
 	 * @return SenderName
 	 */
 	public String getSenderName() {
 		return SenderName;
 	}
 	/**
-	 * ³]©wSenderName ±H¥ó¤H©m¦W
+	 * è¨­å®šSenderName å¯„ä»¶äººå§“å
 	 * @param senderName
 	 */
 	public void setSenderName(String senderName) {
 		SenderName = senderName;
 	}
 	/**
-	 * ¨ú±oSenderPhone °h³f¤H¹q¸Ü
+	 * å–å¾—SenderPhone é€€è²¨äººé›»è©±
 	 * @return SenderPhone
 	 */
 	public String getSenderPhone() {
 		return SenderPhone;
 	}
 	/**
-	 * ³]©wSenderPhone °h³f¤H¹q¸Ü
+	 * è¨­å®šSenderPhone é€€è²¨äººé›»è©±
 	 * @param senderPhone
 	 */
 	public void setSenderPhone(String senderPhone) {
 		SenderPhone = senderPhone;
 	}
 	/**
-	 * ¨ú±oRemark ³Æµù
+	 * å–å¾—Remark å‚™è¨»
 	 * @return Remark
 	 */
 	public String getRemark() {
 		return Remark;
 	}
 	/**
-	 * ³]©wRemark ³Æµù
+	 * è¨­å®šRemark å‚™è¨»
 	 * @param remark
 	 */
 	public void setRemark(String remark) {
 		Remark = remark;
 	}
 	/**
-	 * ¨ú±oQuantity ¼Æ¶q ­Y¦³¦h­Ó°Ó«~½Ğ¥Î#¤À¹j
+	 * å–å¾—Quantity æ•¸é‡ è‹¥æœ‰å¤šå€‹å•†å“è«‹ç”¨#åˆ†éš”
 	 * @return Quantity
 	 */
 	public String getQuantity() {
 		return Quantity;
 	}
 	/**
-	 * ³]©wQuantity ¼Æ¶q ­Y¦³¦h­Ó°Ó«~½Ğ¥Î#¤À¹j
+	 * è¨­å®šQuantity æ•¸é‡ è‹¥æœ‰å¤šå€‹å•†å“è«‹ç”¨#åˆ†éš”
 	 * @param quantity
 	 */
 	public void setQuantity(String quantity) {
 		Quantity = quantity;
 	}
 	/**
-	 * ¨ú±oCost ¦¨¥»  ­Y¦³¦h­Ó°Ó«~½Ğ¥Î#¤À¹j
+	 * å–å¾—Cost æˆæœ¬  è‹¥æœ‰å¤šå€‹å•†å“è«‹ç”¨#åˆ†éš”
 	 * @return Cost
 	 */
 	public String getCost() {
 		return Cost;
 	}
 	/**
-	 * ³]©wCost ¦¨¥»  ­Y¦³¦h­Ó°Ó«~½Ğ¥Î#¤À¹j
+	 * è¨­å®šCost æˆæœ¬  è‹¥æœ‰å¤šå€‹å•†å“è«‹ç”¨#åˆ†éš”
 	 * @param cost
 	 */
 	public void setCost(String cost) {
 		Cost = cost;
 	}
 	/**
-	 * ¨ú±oPlatformID ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ¡A¦¹°Ñ¼Æ¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î¡A¤@¯ë¼t°Ó¤¶±µ½Ğ©ñªÅ­È¡C­Y¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î®É¡AMerchantID ½Ğ±a½æ®a©Ò¸j©wªºMerchantID¡C
+	 * å–å¾—PlatformID ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›ï¼Œæ­¤åƒæ•¸ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨ï¼Œä¸€èˆ¬å» å•†ä»‹æ¥è«‹æ”¾ç©ºå€¼ã€‚è‹¥ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨æ™‚ï¼ŒMerchantID è«‹å¸¶è³£å®¶æ‰€ç¶å®šçš„MerchantIDã€‚
 	 * @return PlatformID
 	 */
 	public String getPlatformID() {
 		return PlatformID;
 	}
 	/**
-	 * ³]©wPlatformID ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ¡A¦¹°Ñ¼Æ¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î¡A¤@¯ë¼t°Ó¤¶±µ½Ğ©ñªÅ­È¡C­Y¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î®É¡AMerchantID ½Ğ±a½æ®a©Ò¸j©wªºMerchantID¡C
+	 * è¨­å®šPlatformID ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›ï¼Œæ­¤åƒæ•¸ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨ï¼Œä¸€èˆ¬å» å•†ä»‹æ¥è«‹æ”¾ç©ºå€¼ã€‚è‹¥ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨æ™‚ï¼ŒMerchantID è«‹å¸¶è³£å®¶æ‰€ç¶å®šçš„MerchantIDã€‚
 	 * @param platformID
 	 */
 	public void setPlatformID(String platformID) {

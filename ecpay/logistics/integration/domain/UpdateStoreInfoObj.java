@@ -1,7 +1,7 @@
 package ecpay.logistics.integration.domain;
 
 /**
- * §ó·sªù¥«(²Î¤@¶W°ÓC2C)ª«¥ó
+ * æ›´æ–°é–€å¸‚(çµ±ä¸€è¶…å•†C2C)ç‰©ä»¶
  * @author mark.chiu
  *
  */
@@ -9,165 +9,165 @@ public class UpdateStoreInfoObj {
 	
 	/**
 	 * MerchantID
-	 * ¼t°Ó½s¸¹
+	 * å» å•†ç·¨è™Ÿ
 	 */
 	private String MerchantID = "";
 	
 	/**
 	 * AllPayLogisticsID
-	 * ª«¬y¥æ©ö½s¸¹
+	 * ç‰©æµäº¤æ˜“ç·¨è™Ÿ
 	 */
 	private String AllPayLogisticsID = "";
 	
 	/**
 	 * CVSPaymentNo
-	 * ±H³f½s¸¹
+	 * å¯„è²¨ç·¨è™Ÿ
 	 */
 	private String CVSPaymentNo = "";
 	
 	/**
 	 * CVSValidationNo
-	 * ÅçÃÒ½X
+	 * é©—è­‰ç¢¼
 	 */
 	private String CVSValidationNo = "";
 	
 	/**
 	 * StoreType
-	 * ªù¥«Ãş«¬
+	 * é–€å¸‚é¡å‹
 	 */
 	private String StoreType = "";
 	
 	/**
 	 * ReceiverStoreID
-	 * ª«¬y­q³æ¨ú³fªù¥«
+	 * ç‰©æµè¨‚å–®å–è²¨é–€å¸‚
 	 */
 	private String ReceiverStoreID = "";
 	
 	/**
 	 * ReturnStoreID
-	 * ª«¬y­q³æ°h³fªù¥«
+	 * ç‰©æµè¨‚å–®é€€è²¨é–€å¸‚
 	 */
 	private String ReturnStoreID = "";
 	
 	/**
 	 * PlatformID
-	 * ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹
+	 * ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ
 	 */
 	private String PlatformID = "";
 	
 	/********************* getters and setters *********************/
 	
 	/**
-	 * ¨ú±oMerchantID ¼t°Ó½s¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ
+	 * å–å¾—MerchantID å» å•†ç·¨è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›
 	 * @return MerchantID
 	 */
 	public String getMerchantID() {
 		return MerchantID;
 	}
 	/**
-	 * ³]©wMerchantID ¼t°Ó½s¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ
+	 * è¨­å®šMerchantID å» å•†ç·¨è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›
 	 * @param merchantID
 	 */
 	public void setMerchantID(String merchantID) {
 		MerchantID = merchantID;
 	}
 	/**
-	 * ¨ú±oAllPayLogisticsID ª«¬y¥æ©ö½s¸¹
+	 * å–å¾—AllPayLogisticsID ç‰©æµäº¤æ˜“ç·¨è™Ÿ
 	 * @return AllPayLogisticsID
 	 */
 	public String getAllPayLogisticsID() {
 		return AllPayLogisticsID;
 	}
 	/**
-	 * ³]©wAllPayLogisticsID ª«¬y¥æ©ö½s¸¹
+	 * è¨­å®šAllPayLogisticsID ç‰©æµäº¤æ˜“ç·¨è™Ÿ
 	 * @param allPayLogisticsID
 	 */
 	public void setAllPayLogisticsID(String allPayLogisticsID) {
 		AllPayLogisticsID = allPayLogisticsID;
 	}
 	/**
-	 * ¨ú±oCVSPaymentNo ±H³f½s¸¹
+	 * å–å¾—CVSPaymentNo å¯„è²¨ç·¨è™Ÿ
 	 * @return CVSPaymentNo
 	 */
 	public String getCVSPaymentNo() {
 		return CVSPaymentNo;
 	}
 	/**
-	 * ³]©wCVSPaymentNo ±H³f½s¸¹
+	 * è¨­å®šCVSPaymentNo å¯„è²¨ç·¨è™Ÿ
 	 * @param cVSPaymentNo
 	 */
 	public void setCVSPaymentNo(String cVSPaymentNo) {
 		CVSPaymentNo = cVSPaymentNo;
 	}
 	/**
-	 * ¨ú±oCVSValidationNo ÅçÃÒ½X
+	 * å–å¾—CVSValidationNo é©—è­‰ç¢¼
 	 * @return CVSValidationNo
 	 */
 	public String getCVSValidationNo() {
 		return CVSValidationNo;
 	}
 	/**
-	 * ³]©wCVSValidationNo ÅçÃÒ½X
+	 * è¨­å®šCVSValidationNo é©—è­‰ç¢¼
 	 * @param cVSValidationNo
 	 */
 	public void setCVSValidationNo(String cVSValidationNo) {
 		CVSValidationNo = cVSValidationNo;
 	}
 	/**
-	 * ¨ú±oStoreType ªù¥«Ãş«¬
-	 * 01¡G¨ú¥óªù¥«§ó·s 
-	 * 02¡G°h¥óªù¥«§ó·s
+	 * å–å¾—StoreType é–€å¸‚é¡å‹
+	 * 01ï¼šå–ä»¶é–€å¸‚æ›´æ–° 
+	 * 02ï¼šé€€ä»¶é–€å¸‚æ›´æ–°
 	 * @return StoreType
 	 */
 	public String getStoreType() {
 		return StoreType;
 	}
 	/**
-	 * ³]©wStoreType ªù¥«Ãş«¬
-	 * 01¡G¨ú¥óªù¥«§ó·s 
-	 * 02¡G°h¥óªù¥«§ó·s
+	 * è¨­å®šStoreType é–€å¸‚é¡å‹
+	 * 01ï¼šå–ä»¶é–€å¸‚æ›´æ–° 
+	 * 02ï¼šé€€ä»¶é–€å¸‚æ›´æ–°
 	 * @param storeType
 	 */
 	public void setStoreType(String storeType) {
 		StoreType = storeType;
 	}
 	/**
-	 * ¨ú±oReceiverStoreID ª«¬y­q³æ¨ú³fªù¥« ª«¬y­q³æ¨ú³fªù¥«¡Bª«¬y­q³æ°h³fªù¥«»İ¾Ü¤@¥²¶ñ¡C
+	 * å–å¾—ReceiverStoreID ç‰©æµè¨‚å–®å–è²¨é–€å¸‚ ç‰©æµè¨‚å–®å–è²¨é–€å¸‚ã€ç‰©æµè¨‚å–®é€€è²¨é–€å¸‚éœ€æ“‡ä¸€å¿…å¡«ã€‚
 	 * @return ReceiverStoreID
 	 */
 	public String getReceiverStoreID() {
 		return ReceiverStoreID;
 	}
 	/**
-	 * ³]©wReceiverStoreID ª«¬y­q³æ¨ú³fªù¥« ª«¬y­q³æ¨ú³fªù¥«¡Bª«¬y­q³æ°h³fªù¥«»İ¾Ü¤@¥²¶ñ¡C
+	 * è¨­å®šReceiverStoreID ç‰©æµè¨‚å–®å–è²¨é–€å¸‚ ç‰©æµè¨‚å–®å–è²¨é–€å¸‚ã€ç‰©æµè¨‚å–®é€€è²¨é–€å¸‚éœ€æ“‡ä¸€å¿…å¡«ã€‚
 	 * @param receiverStoreID
 	 */
 	public void setReceiverStoreID(String receiverStoreID) {
 		ReceiverStoreID = receiverStoreID;
 	}
 	/**
-	 * ¨ú±o ReturnStoreID ª«¬y­q³æ°h³fªù¥«  ª«¬y­q³æ¨ú³fªù¥«¡Bª«¬y­q³æ°h³fªù¥«»İ¾Ü¤@¥²¶ñ¡C
+	 * å–å¾— ReturnStoreID ç‰©æµè¨‚å–®é€€è²¨é–€å¸‚  ç‰©æµè¨‚å–®å–è²¨é–€å¸‚ã€ç‰©æµè¨‚å–®é€€è²¨é–€å¸‚éœ€æ“‡ä¸€å¿…å¡«ã€‚
 	 * @return ReturnStoreID
 	 */
 	public String getReturnStoreID() {
 		return ReturnStoreID;
 	}
 	/**
-	 * ³]©wReturnStoreID ª«¬y­q³æ°h³fªù¥«  ª«¬y­q³æ¨ú³fªù¥«¡Bª«¬y­q³æ°h³fªù¥«»İ¾Ü¤@¥²¶ñ¡C
+	 * è¨­å®šReturnStoreID ç‰©æµè¨‚å–®é€€è²¨é–€å¸‚  ç‰©æµè¨‚å–®å–è²¨é–€å¸‚ã€ç‰©æµè¨‚å–®é€€è²¨é–€å¸‚éœ€æ“‡ä¸€å¿…å¡«ã€‚
 	 * @param returnStoreID
 	 */
 	public void setReturnStoreID(String returnStoreID) {
 		ReturnStoreID = returnStoreID;
 	}
 	/**
-	 * ¨ú±oPlatformID ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ¡A¦¹°Ñ¼Æ¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î¡A¤@¯ë¼t°Ó¤¶±µ½Ğ©ñªÅ­È¡C­Y¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î®É¡AMerchantID ½Ğ±a½æ®a©Ò¸j©wªºMerchantID¡C 
+	 * å–å¾—PlatformID ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›ï¼Œæ­¤åƒæ•¸ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨ï¼Œä¸€èˆ¬å» å•†ä»‹æ¥è«‹æ”¾ç©ºå€¼ã€‚è‹¥ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨æ™‚ï¼ŒMerchantID è«‹å¸¶è³£å®¶æ‰€ç¶å®šçš„MerchantIDã€‚ 
 	 * @return PlatformID
 	 */
 	public String getPlatformID() {
 		return PlatformID;
 	}
 	/**
-	 * ³]©wPlatformID ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ¡A¦¹°Ñ¼Æ¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î¡A¤@¯ë¼t°Ó¤¶±µ½Ğ©ñªÅ­È¡C­Y¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î®É¡AMerchantID ½Ğ±a½æ®a©Ò¸j©wªºMerchantID¡C 
+	 * è¨­å®šPlatformID ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›ï¼Œæ­¤åƒæ•¸ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨ï¼Œä¸€èˆ¬å» å•†ä»‹æ¥è«‹æ”¾ç©ºå€¼ã€‚è‹¥ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨æ™‚ï¼ŒMerchantID è«‹å¸¶è³£å®¶æ‰€ç¶å®šçš„MerchantIDã€‚ 
 	 * @param platformID
 	 */
 	public void setPlatformID(String platformID) {

@@ -70,7 +70,7 @@ public class ExampleAllInOne {
 		obj.setMerchantTradeDate("2017/01/01 05:05:05");
 		obj.setLogisticsSubType("FAMI");
 		obj.setGoodsAmount("5000");
-		obj.setSenderName("´ú¸Õ¥ý¥Í");
+		obj.setSenderName("æ¸¬è©¦å…ˆç”Ÿ");
 		obj.setReceiverName("Ying");
 		obj.setReceiverCellPhone("0911429215");
 		obj.setServerReplyURL("https://www.yahoo.com.tw");

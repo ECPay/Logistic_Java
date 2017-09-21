@@ -1,7 +1,7 @@
 package ecpay.logistics.integration.domain;
 
 /**
- * ¦v°t°fª«¬y­q³æª«¥ó
+ * å®…é…é€†ç‰©æµè¨‚å–®ç‰©ä»¶
  * @author mark.chiu
  *
  */
@@ -9,513 +9,513 @@ public class ReturnHomeObj {
 	
 	/**
 	 * MerchantID
-	 * ¼t°Ó½s¸¹
+	 * å» å•†ç·¨è™Ÿ
 	 */
 	private String MerchantID = "";
 	
 	/**
 	 * AllPayLogisticsID
-	 * ºñ¬É¬ì§Şªºª«¬y¥æ©ö½s¸¹
+	 * ç¶ ç•Œç§‘æŠ€çš„ç‰©æµäº¤æ˜“ç·¨è™Ÿ
 	 */
 	private String AllPayLogisticsID = "";
 	
 	/**
 	 * LogisticsSubType
-	 * ª«¬y¤lÃş«¬
+	 * ç‰©æµå­é¡å‹
 	 */
 	private String LogisticsSubType = "";
 	
 	/**
 	 * ServerReplyURL
-	 * Server ºİ¦^ÂĞºô§}
+	 * Server ç«¯å›è¦†ç¶²å€
 	 */
 	private String ServerReplyURL = "";
 	
 	/**
 	 * SenderName
-	 * °h³f¤H©m¦W
+	 * é€€è²¨äººå§“å
 	 */
 	private String SenderName = "";
 	
 	/**
 	 * SenderPhone
-	 * °h³f¤H¹q¸Ü 
+	 * é€€è²¨äººé›»è©± 
 	 */
 	private String SenderPhone = "";
 	
 	/**
 	 * SenderCellPhone
-	 * °h³f¤H¤â¾÷
+	 * é€€è²¨äººæ‰‹æ©Ÿ
 	 */
 	private String SenderCellPhone = "";
 	
 	/**
 	 * SenderZipCode
-	 * °h³f¤H¶l»¼°Ï¸¹ 
+	 * é€€è²¨äººéƒµéå€è™Ÿ 
 	 */
 	private String SenderZipCode = "";
 	
 	/**
 	 * SenderAddress
-	 * °h³f¤H¦a§}
+	 * é€€è²¨äººåœ°å€
 	 */
 	private String SenderAddress = "";
 	
 	/**
 	 * ReceiverName
-	 * ¦¬¥ó¤H©m¦W
+	 * æ”¶ä»¶äººå§“å
 	 */
 	private String ReceiverName = "";
 	
 	/**
 	 * ReceiverPhone
-	 * ¦¬¥ó¤H¹q¸Ü
+	 * æ”¶ä»¶äººé›»è©±
 	 */
 	private String ReceiverPhone = "";
 	
 	/**
 	 * ReceiverCellPhone
-	 * ¦¬¥ó¤H¤â¾÷
+	 * æ”¶ä»¶äººæ‰‹æ©Ÿ
 	 */
 	private String ReceiverCellPhone = "";
 	
 	/**
 	 * ReceiverZipCode
-	 * ¦¬¥ó¤H¶l»¼°Ï¸¹ 
+	 * æ”¶ä»¶äººéƒµéå€è™Ÿ 
 	 */
 	private String ReceiverZipCode = "";
 	
 	/**
 	 * ReceiverAddress
-	 * ¦¬¥ó¤H¦a§}
+	 * æ”¶ä»¶äººåœ°å€
 	 */
 	private String ReceiverAddress = "";
 	
 	/**
 	 * GoodsAmount
-	 * °Ó«~ª÷ÃB
+	 * å•†å“é‡‘é¡
 	 */
 	private String GoodsAmount = "";
 	
 	/**
 	 * GoodsName
-	 * ª««~¦WºÙ
+	 * ç‰©å“åç¨±
 	 */
 	private String GoodsName = "";
 	
 	/**
 	 * Temperature
-	 * ·Å¼h 
+	 * æº«å±¤ 
 	 */
 	private String Temperature = "";
 	
 	/**
 	 * Distance
-	 * ¶ZÂ÷
+	 * è·é›¢
 	 */
 	private String Distance = "";
 	
 	/**
 	 * Specification
-	 * ³W®æ
+	 * è¦æ ¼
 	 */
 	private String Specification = "";
 	
 	/**
 	 * ScheduledPickupTime
-	 * ¹w©w¨ú¥ó®É¬q
+	 * é å®šå–ä»¶æ™‚æ®µ
 	 */
 	private String ScheduledPickupTime = "";
 	
 	/**
 	 * ScheduledDeliveryTime
-	 * ¹w©w°e¹F®É¬q
+	 * é å®šé€é”æ™‚æ®µ
 	 */
 	private String ScheduledDeliveryTime = "";
 	
 	/**
 	 * ScheduledDeliveryDate
-	 * «ü©w°e¹F¤é
+	 * æŒ‡å®šé€é”æ—¥
 	 */
 	private String ScheduledDeliveryDate = "";
 	
 	/**
 	 * PackageCount
-	 * ¥]»q¥ó¼Æ
+	 * åŒ…è£¹ä»¶æ•¸
 	 */
 	private String PackageCount = "";
 	
 	/**
 	 * Remark
-	 * ³Æµù
+	 * å‚™è¨»
 	 */
 	private String Remark = "";
 	
 	/**
 	 * PlatformID
-	 * ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹
+	 * ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ
 	 */
 	private String PlatformID = "";
 	
 	/********************* getters and setters *********************/
 	
 	/**
-	 * ¨ú±oMerchantID ¼t°Ó½s¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ
+	 * å–å¾—MerchantID å» å•†ç·¨è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›
 	 * @return MerchantID
 	 */
 	public String getMerchantID() {
 		return MerchantID;
 	}
 	/**
-	 * ³]©wMerchantID ¼t°Ó½s¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ
+	 * è¨­å®šMerchantID å» å•†ç·¨è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›
 	 * @param merchantID
 	 */
 	public void setMerchantID(String merchantID) {
 		MerchantID = merchantID;
 	}
 	/**
-	 * ¨ú±oAllPayLogisticsID ºñ¬É¬ì§Şªºª«¬y¥æ©ö½s¸¹ »Pª«¬y¤lÃş«¬[LogisticsSubType]¾Ü¤@¤£¥i¬°ªÅ¡C¶È­­¼Æ¦r¡A¤£¥i¨Ï¥Î¯S®í²Å¸¹¡B­^¤å
+	 * å–å¾—AllPayLogisticsID ç¶ ç•Œç§‘æŠ€çš„ç‰©æµäº¤æ˜“ç·¨è™Ÿ èˆ‡ç‰©æµå­é¡å‹[LogisticsSubType]æ“‡ä¸€ä¸å¯ç‚ºç©ºã€‚åƒ…é™æ•¸å­—ï¼Œä¸å¯ä½¿ç”¨ç‰¹æ®Šç¬¦è™Ÿã€è‹±æ–‡
 	 * @return AllPayLogisticsID
 	 */
 	public String getAllPayLogisticsID() {
 		return AllPayLogisticsID;
 	}
 	/**
-	 * ³]©wAllPayLogisticsID ºñ¬É¬ì§Şªºª«¬y¥æ©ö½s¸¹ »Pª«¬y¤lÃş«¬[LogisticsSubType]¾Ü¤@¤£¥i¬°ªÅ¡C¶È­­¼Æ¦r¡A¤£¥i¨Ï¥Î¯S®í²Å¸¹¡B­^¤å
+	 * è¨­å®šAllPayLogisticsID ç¶ ç•Œç§‘æŠ€çš„ç‰©æµäº¤æ˜“ç·¨è™Ÿ èˆ‡ç‰©æµå­é¡å‹[LogisticsSubType]æ“‡ä¸€ä¸å¯ç‚ºç©ºã€‚åƒ…é™æ•¸å­—ï¼Œä¸å¯ä½¿ç”¨ç‰¹æ®Šç¬¦è™Ÿã€è‹±æ–‡
 	 * @param allPayLogisticsID
 	 */
 	public void setAllPayLogisticsID(String allPayLogisticsID) {
 		AllPayLogisticsID = allPayLogisticsID;
 	}
 	/**
-	 * ¨ú±oLogisticsSubType ª«¬y¤lÃş«¬
+	 * å–å¾—LogisticsSubType ç‰©æµå­é¡å‹
 	 * ---HOME--- 
-	 * TCAT:¶Â¿ß
-	 * ECAN:¦v°t³q
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C
+	 * TCAT:é»‘è²“
+	 * ECAN:å®…é…é€š
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚
 	 * @return LogisticsSubType
 	 */
 	public String getLogisticsSubType() {
 		return LogisticsSubType;
 	}
 	/**
-	 * ³]©wLogisticsSubType ª«¬y¤lÃş«¬
+	 * è¨­å®šLogisticsSubType ç‰©æµå­é¡å‹
 	 * ---HOME--- 
-	 * TCAT:¶Â¿ß
-	 * ECAN:¦v°t³q
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C
+	 * TCAT:é»‘è²“
+	 * ECAN:å®…é…é€š
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚
 	 * @param logisticsSubType
 	 */
 	public void setLogisticsSubType(String logisticsSubType) {
 		LogisticsSubType = logisticsSubType;
 	}
 	/**
-	 * ¨ú±oServerReplyURL Server ºİ¦^ÂĞºô§} ª«¬yª¬ºA³£·|³z¹L¦¹ URL ³qª¾
+	 * å–å¾—ServerReplyURL Server ç«¯å›è¦†ç¶²å€ ç‰©æµç‹€æ…‹éƒ½æœƒé€éæ­¤ URL é€šçŸ¥
 	 * @return ServerReplyURL
 	 */
 	public String getServerReplyURL() {
 		return ServerReplyURL;
 	}
 	/**
-	 * ³]©wServerReplyURL Server ºİ¦^ÂĞºô§} ª«¬yª¬ºA³£·|³z¹L¦¹ URL ³qª¾
+	 * è¨­å®šServerReplyURL Server ç«¯å›è¦†ç¶²å€ ç‰©æµç‹€æ…‹éƒ½æœƒé€éæ­¤ URL é€šçŸ¥
 	 * @param serverReplyURL
 	 */
 	public void setServerReplyURL(String serverReplyURL) {
 		ServerReplyURL = serverReplyURL;
 	}
 	/**
-	 * ¨ú±oSenderName °h³f¤H©m¦W
-	 * 1. ­Y AllPayLogisticsID ¦³­È¥B¸Ó­q³æ¬°¬Û¦Pªº¡uª«¬y¤lÃş«¬¡v®É¡A°h³f¦¬¥ó¤H»P±H¥ó¤H¸ê°T·|»P­ì­q³æ¬Û¤Ï¥B¦Û°Ê±a¤J¦v°t³W®æ¡B·Å¼h¡B¶ZÂ÷¡B«~¦W¡C 
-	 * 2. ­Y¸ê°T»PÃö³sª«¬y¥æ©ö¤£¦P®É¡A¥i¦Û¦æ¿é¤J 
-	 * ¡°ª`·N¨Æ¶µ: 
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
-	 * 4. ªø«×­­¨î³Ì¦h 10 ­Ó¦r¤¸(¤¤¤å 5 ­Ó¦r, ­^¤å 10 ­Ó¦r)¡C 
+	 * å–å¾—SenderName é€€è²¨äººå§“å
+	 * 1. è‹¥ AllPayLogisticsID æœ‰å€¼ä¸”è©²è¨‚å–®ç‚ºç›¸åŒçš„ã€Œç‰©æµå­é¡å‹ã€æ™‚ï¼Œé€€è²¨æ”¶ä»¶äººèˆ‡å¯„ä»¶äººè³‡è¨Šæœƒèˆ‡åŸè¨‚å–®ç›¸åä¸”è‡ªå‹•å¸¶å…¥å®…é…è¦æ ¼ã€æº«å±¤ã€è·é›¢ã€å“åã€‚ 
+	 * 2. è‹¥è³‡è¨Šèˆ‡é—œé€£ç‰©æµäº¤æ˜“ä¸åŒæ™‚ï¼Œå¯è‡ªè¡Œè¼¸å…¥ 
+	 * â€»æ³¨æ„äº‹é …: 
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 4. é•·åº¦é™åˆ¶æœ€å¤š 10 å€‹å­—å…ƒ(ä¸­æ–‡ 5 å€‹å­—, è‹±æ–‡ 10 å€‹å­—)ã€‚ 
 	 * @return SenderName
 	 */
 	public String getSenderName() {
 		return SenderName;
 	}
 	/**
-	 * ³]©wSenderName °h³f¤H©m¦W
-	 * 1. ­Y AllPayLogisticsID ¦³­È¥B¸Ó­q³æ¬°¬Û¦Pªº¡uª«¬y¤lÃş«¬¡v®É¡A°h³f¦¬¥ó¤H»P±H¥ó¤H¸ê°T·|»P­ì­q³æ¬Û¤Ï¥B¦Û°Ê±a¤J¦v°t³W®æ¡B·Å¼h¡B¶ZÂ÷¡B«~¦W¡C 
-	 * 2. ­Y¸ê°T»PÃö³sª«¬y¥æ©ö¤£¦P®É¡A¥i¦Û¦æ¿é¤J 
-	 * ¡°ª`·N¨Æ¶µ: 
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
-	 * 4. ªø«×­­¨î³Ì¦h 10 ­Ó¦r¤¸(¤¤¤å 5 ­Ó¦r, ­^¤å 10 ­Ó¦r)¡C 
+	 * è¨­å®šSenderName é€€è²¨äººå§“å
+	 * 1. è‹¥ AllPayLogisticsID æœ‰å€¼ä¸”è©²è¨‚å–®ç‚ºç›¸åŒçš„ã€Œç‰©æµå­é¡å‹ã€æ™‚ï¼Œé€€è²¨æ”¶ä»¶äººèˆ‡å¯„ä»¶äººè³‡è¨Šæœƒèˆ‡åŸè¨‚å–®ç›¸åä¸”è‡ªå‹•å¸¶å…¥å®…é…è¦æ ¼ã€æº«å±¤ã€è·é›¢ã€å“åã€‚ 
+	 * 2. è‹¥è³‡è¨Šèˆ‡é—œé€£ç‰©æµäº¤æ˜“ä¸åŒæ™‚ï¼Œå¯è‡ªè¡Œè¼¸å…¥ 
+	 * â€»æ³¨æ„äº‹é …: 
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 4. é•·åº¦é™åˆ¶æœ€å¤š 10 å€‹å­—å…ƒ(ä¸­æ–‡ 5 å€‹å­—, è‹±æ–‡ 10 å€‹å­—)ã€‚ 
 	 * @param senderName
 	 */
 	public void setSenderName(String senderName) {
 		SenderName = senderName;
 	}
 	/**
-	 * ¨ú±oSenderPhone °h³f¤H¹q¸Ü
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì»P°h³f¤H¤â¾÷[SenderCellPhone]¾Ü¤@¤£¥i¬°ªÅ) 
-	 * 4. ¤¹³\¼Æ¦r+¯S®í²Å¸¹¡F¯S®í²Å¸¹¶È­­()-#
+	 * å–å¾—SenderPhone é€€è²¨äººé›»è©±
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½èˆ‡é€€è²¨äººæ‰‹æ©Ÿ[SenderCellPhone]æ“‡ä¸€ä¸å¯ç‚ºç©º) 
+	 * 4. å…è¨±æ•¸å­—+ç‰¹æ®Šç¬¦è™Ÿï¼›ç‰¹æ®Šç¬¦è™Ÿåƒ…é™()-#
 	 * @return SenderPhone
 	 */
 	public String getSenderPhone() {
 		return SenderPhone;
 	}
 	/**
-	 * ³]©wSenderPhone °h³f¤H¹q¸Ü
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì»P°h³f¤H¤â¾÷[SenderCellPhone]¾Ü¤@¤£¥i¬°ªÅ) 
-	 * 4. ¤¹³\¼Æ¦r+¯S®í²Å¸¹¡F¯S®í²Å¸¹¶È­­()-#
+	 * è¨­å®šSenderPhone é€€è²¨äººé›»è©±
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½èˆ‡é€€è²¨äººæ‰‹æ©Ÿ[SenderCellPhone]æ“‡ä¸€ä¸å¯ç‚ºç©º) 
+	 * 4. å…è¨±æ•¸å­—+ç‰¹æ®Šç¬¦è™Ÿï¼›ç‰¹æ®Šç¬¦è™Ÿåƒ…é™()-#
 	 * @param senderPhone
 	 */
 	public void setSenderPhone(String senderPhone) {
 		SenderPhone = senderPhone;
 	}
 	/**
-	 * ¨ú±oSenderCellPhone °h³f¤H¤â¾÷
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì»P°h³f¤H¹q¸Ü[SenderPhone]¾Ü¤@¤£¥i¬°ªÅ) 
-	 * 4. ¥u¤¹³\¼Æ¦r¡B10 ½X¡B09 ¶}ÀY
+	 * å–å¾—SenderCellPhone é€€è²¨äººæ‰‹æ©Ÿ
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½èˆ‡é€€è²¨äººé›»è©±[SenderPhone]æ“‡ä¸€ä¸å¯ç‚ºç©º) 
+	 * 4. åªå…è¨±æ•¸å­—ã€10 ç¢¼ã€09 é–‹é ­
 	 * @return SenderCellPhone
 	 */
 	public String getSenderCellPhone() {
 		return SenderCellPhone;
 	}
 	/**
-	 * ³]©wSenderCellPhone °h³f¤H¤â¾÷
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì»P°h³f¤H¹q¸Ü[SenderPhone]¾Ü¤@¤£¥i¬°ªÅ) 
-	 * 4. ¥u¤¹³\¼Æ¦r¡B10 ½X¡B09 ¶}ÀY
+	 * è¨­å®šSenderCellPhone é€€è²¨äººæ‰‹æ©Ÿ
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½èˆ‡é€€è²¨äººé›»è©±[SenderPhone]æ“‡ä¸€ä¸å¯ç‚ºç©º) 
+	 * 4. åªå…è¨±æ•¸å­—ã€10 ç¢¼ã€09 é–‹é ­
 	 * @param senderCellPhone
 	 */
 	public void setSenderCellPhone(String senderCellPhone) {
 		SenderCellPhone = senderCellPhone;
 	}
 	/**
-	 * ¨ú±oSenderZipCode °h³f¤H¶l»¼°Ï¸¹
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
+	 * å–å¾—SenderZipCode é€€è²¨äººéƒµéå€è™Ÿ
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
 	 * @return SenderZipCode
 	 */
 	public String getSenderZipCode() {
 		return SenderZipCode;
 	}
 	/**
-	 * ³]©wSenderZipCode °h³f¤H¶l»¼°Ï¸¹
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
+	 * è¨­å®šSenderZipCode é€€è²¨äººéƒµéå€è™Ÿ
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
 	 * @param senderZipCode
 	 */
 	public void setSenderZipCode(String senderZipCode) {
 		SenderZipCode = senderZipCode;
 	}
 	/**
-	 * ¨ú±oSenderAddress °h³f¤H¦a§}
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¦r¤¸­­¨î»İ¤j©ó 6 ­Ó¦r¤¸¡A¥B¤£¥i¶W¹L 60 ­Ó¦r¤¸¡C 
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì¦r¤¸­­¨î»İ¤j©ó 6 ­Ó¦r¤¸¡A¥B¤£¥i¶W¹L 60 ­Ó¦r¤¸¡C
+	 * å–å¾—SenderAddress é€€è²¨äººåœ°å€
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½å­—å…ƒé™åˆ¶éœ€å¤§æ–¼ 6 å€‹å­—å…ƒï¼Œä¸”ä¸å¯è¶…é 60 å€‹å­—å…ƒã€‚ 
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½å­—å…ƒé™åˆ¶éœ€å¤§æ–¼ 6 å€‹å­—å…ƒï¼Œä¸”ä¸å¯è¶…é 60 å€‹å­—å…ƒã€‚
 	 * @return SenderAddress
 	 */
 	public String getSenderAddress() {
 		return SenderAddress;
 	}
 	/**
-	 * ³]©wSenderAddress °h³f¤H¦a§}
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¦r¤¸­­¨î»İ¤j©ó 6 ­Ó¦r¤¸¡A¥B¤£¥i¶W¹L 60 ­Ó¦r¤¸¡C 
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì¦r¤¸­­¨î»İ¤j©ó 6 ­Ó¦r¤¸¡A¥B¤£¥i¶W¹L 60 ­Ó¦r¤¸¡C
+	 * è¨­å®šSenderAddress é€€è²¨äººåœ°å€
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½å­—å…ƒé™åˆ¶éœ€å¤§æ–¼ 6 å€‹å­—å…ƒï¼Œä¸”ä¸å¯è¶…é 60 å€‹å­—å…ƒã€‚ 
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½å­—å…ƒé™åˆ¶éœ€å¤§æ–¼ 6 å€‹å­—å…ƒï¼Œä¸”ä¸å¯è¶…é 60 å€‹å­—å…ƒã€‚
 	 * @param senderAddress
 	 */
 	public void setSenderAddress(String senderAddress) {
 		SenderAddress = senderAddress;
 	}
 	/**
-	 * ¨ú±oReceiverName ¦¬¥ó¤H©m¦W
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
-	 * 4. ¦r¤¸­­¨î¬° 10 ­Ó¦r¤¸(³Ì¦h 5 ­Ó¤¤¤å¦r¡B10 ­Ó­^¤å¦r) ¡B¤£¥i¦³ªÅ¥Õ¡A­Y±a¦³ªÅ¥Õ¨t²Î¦Û°Ê¥h°£¡C
+	 * å–å¾—ReceiverName æ”¶ä»¶äººå§“å
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 4. å­—å…ƒé™åˆ¶ç‚º 10 å€‹å­—å…ƒ(æœ€å¤š 5 å€‹ä¸­æ–‡å­—ã€10 å€‹è‹±æ–‡å­—) ã€ä¸å¯æœ‰ç©ºç™½ï¼Œè‹¥å¸¶æœ‰ç©ºç™½ç³»çµ±è‡ªå‹•å»é™¤ã€‚
 	 * @return ReceiverName
 	 */
 	public String getReceiverName() {
 		return ReceiverName;
 	}
 	/**
-	 * ³]©wReceiverName ¦¬¥ó¤H©m¦W
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
-	 * 4. ¦r¤¸­­¨î¬° 10 ­Ó¦r¤¸(³Ì¦h 5 ­Ó¤¤¤å¦r¡B10 ­Ó­^¤å¦r) ¡B¤£¥i¦³ªÅ¥Õ¡A­Y±a¦³ªÅ¥Õ¨t²Î¦Û°Ê¥h°£¡C
+	 * è¨­å®šReceiverName æ”¶ä»¶äººå§“å
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 4. å­—å…ƒé™åˆ¶ç‚º 10 å€‹å­—å…ƒ(æœ€å¤š 5 å€‹ä¸­æ–‡å­—ã€10 å€‹è‹±æ–‡å­—) ã€ä¸å¯æœ‰ç©ºç™½ï¼Œè‹¥å¸¶æœ‰ç©ºç™½ç³»çµ±è‡ªå‹•å»é™¤ã€‚
 	 * @param receiverName
 	 */
 	public void setReceiverName(String receiverName) {
 		ReceiverName = receiverName;
 	}
 	/**
-	 * ¨ú±oReceiverPhone ¦¬¥ó¤H¹q¸Ü
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì»P¦¬¥ó¤H¤â¾÷[ReceiverCellPhone]¾Ü¤@¤£¥i¬°ªÅ) 
-	 * 4. ¤¹³\¼Æ¦r+¯S®í²Å¸¹¡F¯S®í²Å¸¹¶È­­()-#
+	 * å–å¾—ReceiverPhone æ”¶ä»¶äººé›»è©±
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½èˆ‡æ”¶ä»¶äººæ‰‹æ©Ÿ[ReceiverCellPhone]æ“‡ä¸€ä¸å¯ç‚ºç©º) 
+	 * 4. å…è¨±æ•¸å­—+ç‰¹æ®Šç¬¦è™Ÿï¼›ç‰¹æ®Šç¬¦è™Ÿåƒ…é™()-#
 	 * @return ReceiverPhone
 	 */
 	public String getReceiverPhone() {
 		return ReceiverPhone;
 	}
 	/**
-	 * ³]©wReceiverPhone ¦¬¥ó¤H¹q¸Ü
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì»P¦¬¥ó¤H¤â¾÷[ReceiverCellPhone]¾Ü¤@¤£¥i¬°ªÅ) 
-	 * 4. ¤¹³\¼Æ¦r+¯S®í²Å¸¹¡F¯S®í²Å¸¹¶È­­()-#
+	 * è¨­å®šReceiverPhone æ”¶ä»¶äººé›»è©±
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½èˆ‡æ”¶ä»¶äººæ‰‹æ©Ÿ[ReceiverCellPhone]æ“‡ä¸€ä¸å¯ç‚ºç©º) 
+	 * 4. å…è¨±æ•¸å­—+ç‰¹æ®Šç¬¦è™Ÿï¼›ç‰¹æ®Šç¬¦è™Ÿåƒ…é™()-#
 	 * @param receiverPhone
 	 */
 	public void setReceiverPhone(String receiverPhone) {
 		ReceiverPhone = receiverPhone;
 	}
 	/**
-	 * ¨ú±oReceiverCellPhone ¦¬¥ó¤H¤â¾÷
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì»P¦¬¥ó¤H¹q¸Ü[ReceiverPhone]¾Ü¤@¤£¥i¬°ªÅ) 
-	 * 4. ¥u¤¹³\¼Æ¦r¡B10 ½X¡B09 ¶}ÀY
+	 * å–å¾—ReceiverCellPhone æ”¶ä»¶äººæ‰‹æ©Ÿ
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½èˆ‡æ”¶ä»¶äººé›»è©±[ReceiverPhone]æ“‡ä¸€ä¸å¯ç‚ºç©º) 
+	 * 4. åªå…è¨±æ•¸å­—ã€10 ç¢¼ã€09 é–‹é ­
 	 * @return ReceiverCellPhone
 	 */
 	public String getReceiverCellPhone() {
 		return ReceiverCellPhone;
 	}
 	/**
-	 * ³]©wReceiverCellPhone ¦¬¥ó¤H¤â¾÷
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì»P¦¬¥ó¤H¹q¸Ü[ReceiverPhone]¾Ü¤@¤£¥i¬°ªÅ) 
-	 * 4. ¥u¤¹³\¼Æ¦r¡B10 ½X¡B09 ¶}ÀY
+	 * è¨­å®šReceiverCellPhone æ”¶ä»¶äººæ‰‹æ©Ÿ
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½èˆ‡æ”¶ä»¶äººé›»è©±[ReceiverPhone]æ“‡ä¸€ä¸å¯ç‚ºç©º) 
+	 * 4. åªå…è¨±æ•¸å­—ã€10 ç¢¼ã€09 é–‹é ­
 	 * @param receiverCellPhone
 	 */
 	public void setReceiverCellPhone(String receiverCellPhone) {
 		ReceiverCellPhone = receiverCellPhone;
 	}
 	/**
-	 * ¨ú±oReceiverZipCode ¦¬¥ó¤H¶l»¼°Ï¸¹
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
+	 * å–å¾—ReceiverZipCode æ”¶ä»¶äººéƒµéå€è™Ÿ
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
 	 * @return ReceiverZipCode
 	 */
 	public String getReceiverZipCode() {
 		return ReceiverZipCode;
 	}
 	/**
-	 * ³]©wReceiverZipCode ¦¬¥ó¤H¶l»¼°Ï¸¹
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì¤£¥i¬°ªÅ­È¡C 
+	 * è¨­å®šReceiverZipCode æ”¶ä»¶äººéƒµéå€è™Ÿ
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½ä¸å¯ç‚ºç©ºå€¼ã€‚ 
 	 * @param receiverZipCode
 	 */
 	public void setReceiverZipCode(String receiverZipCode) {
 		ReceiverZipCode = receiverZipCode;
 	}
 	/**
-	 * ¨ú±oReceiverAddress ¦¬¥ó¤H¦a§}
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¦r¤¸­­¨î»İ¤j©ó 6 ­Ó¦r¤¸¡A¥B¤£¥i¶W¹L 60 ­Ó¦r¤¸¡C 
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì¦r¤¸­­¨î»İ¤j©ó 6 ­Ó¦r¤¸¡A¥B¤£¥i¶W¹L 60 ­Ó¦r¤¸¡C
+	 * å–å¾—ReceiverAddress æ”¶ä»¶äººåœ°å€
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½å­—å…ƒé™åˆ¶éœ€å¤§æ–¼ 6 å€‹å­—å…ƒï¼Œä¸”ä¸å¯è¶…é 60 å€‹å­—å…ƒã€‚ 
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½å­—å…ƒé™åˆ¶éœ€å¤§æ–¼ 6 å€‹å­—å…ƒï¼Œä¸”ä¸å¯è¶…é 60 å€‹å­—å…ƒã€‚
 	 * @return ReceiverAddress
 	 */
 	public String getReceiverAddress() {
 		return ReceiverAddress;
 	}
 	/**
-	 * ³]©wReceiverAddress ¦¬¥ó¤H¦a§}
-	 * 1. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬°¦v°t(Home)¥»Äæ¦ì¥i¬°ªÅ­È¡C 
-	 * 2. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¤£¬°ªÅ­È®É¡A¥B­ìª«¬yÃş«¬[LogisticsType]¬° CVS:¶W°Ó¨ú³f¡A¥»Äæ¦ì¦r¤¸­­¨î»İ¤j©ó 6 ­Ó¦r¤¸¡A¥B¤£¥i¶W¹L 60 ­Ó¦r¤¸¡C 
-	 * 3. ­Yª«¬y¥æ©ö½s¸¹[AllPayLogisticsID]¬°ªÅ­È®É¡A¥»Äæ¦ì¦r¤¸­­¨î»İ¤j©ó 6 ­Ó¦r¤¸¡A¥B¤£¥i¶W¹L 60 ­Ó¦r¤¸¡C
+	 * è¨­å®šReceiverAddress æ”¶ä»¶äººåœ°å€
+	 * 1. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚ºå®…é…(Home)æœ¬æ¬„ä½å¯ç‚ºç©ºå€¼ã€‚ 
+	 * 2. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ä¸ç‚ºç©ºå€¼æ™‚ï¼Œä¸”åŸç‰©æµé¡å‹[LogisticsType]ç‚º CVS:è¶…å•†å–è²¨ï¼Œæœ¬æ¬„ä½å­—å…ƒé™åˆ¶éœ€å¤§æ–¼ 6 å€‹å­—å…ƒï¼Œä¸”ä¸å¯è¶…é 60 å€‹å­—å…ƒã€‚ 
+	 * 3. è‹¥ç‰©æµäº¤æ˜“ç·¨è™Ÿ[AllPayLogisticsID]ç‚ºç©ºå€¼æ™‚ï¼Œæœ¬æ¬„ä½å­—å…ƒé™åˆ¶éœ€å¤§æ–¼ 6 å€‹å­—å…ƒï¼Œä¸”ä¸å¯è¶…é 60 å€‹å­—å…ƒã€‚
 	 * @param receiverAddress
 	 */
 	public void setReceiverAddress(String receiverAddress) {
 		ReceiverAddress = receiverAddress;
 	}
 	/**
-	 * ¨ú±oGoodsAmount °Ó«~ª÷ÃB ª÷ÃB½d³ò¬° 1~20,000 ¤¸ ¦¹¬°°Ó«~¿ò¥¢½ßÀv¨Ì¾Ú¡A¶È¥i¨Ï¥Î¼Æ¦r
+	 * å–å¾—GoodsAmount å•†å“é‡‘é¡ é‡‘é¡ç¯„åœç‚º 1~20,000 å…ƒ æ­¤ç‚ºå•†å“éºå¤±è³ å„Ÿä¾æ“šï¼Œåƒ…å¯ä½¿ç”¨æ•¸å­—
 	 * @return GoodsAmount
 	 */
 	public String getGoodsAmount() {
 		return GoodsAmount;
 	}
 	/**
-	 * ³]©wGoodsAmount °Ó«~ª÷ÃB ª÷ÃB½d³ò¬° 1~20,000 ¤¸ ¦¹¬°°Ó«~¿ò¥¢½ßÀv¨Ì¾Ú¡A¶È¥i¨Ï¥Î¼Æ¦r
+	 * è¨­å®šGoodsAmount å•†å“é‡‘é¡ é‡‘é¡ç¯„åœç‚º 1~20,000 å…ƒ æ­¤ç‚ºå•†å“éºå¤±è³ å„Ÿä¾æ“šï¼Œåƒ…å¯ä½¿ç”¨æ•¸å­—
 	 * @param goodsAmount
 	 */
 	public void setGoodsAmount(String goodsAmount) {
 		GoodsAmount = goodsAmount;
 	}
 	/**
-	 * ¨ú±oGoodsName ª««~¦WºÙ ¤£¥i¦³³æ¤Ş¸¹©ÎÂù¤Ş¸¹¡C
+	 * å–å¾—GoodsName ç‰©å“åç¨± ä¸å¯æœ‰å–®å¼•è™Ÿæˆ–é›™å¼•è™Ÿã€‚
 	 * @return GoodsName
 	 */
 	public String getGoodsName() {
 		return GoodsName;
 	}
 	/**
-	 * ³]©wGoodsName ª««~¦WºÙ ¤£¥i¦³³æ¤Ş¸¹©ÎÂù¤Ş¸¹¡C
+	 * è¨­å®šGoodsName ç‰©å“åç¨± ä¸å¯æœ‰å–®å¼•è™Ÿæˆ–é›™å¼•è™Ÿã€‚
 	 * @param goodsName
 	 */
 	public void setGoodsName(String goodsName) {
 		GoodsName = goodsName;
 	}
 	/**
-	 * ¨ú±oTemperature ·Å¼h
-	 * 0001:±`·Å (¹w³]­È) 
-	 * 0002:§NÂÃ
-	 * 0003:§N­á
+	 * å–å¾—Temperature æº«å±¤
+	 * 0001:å¸¸æº« (é è¨­å€¼) 
+	 * 0002:å†·è—
+	 * 0003:å†·å‡
 	 * @return Temperature
 	 */
 	public String getTemperature() {
 		return Temperature;
 	}
 	/**
-	 * ³]©wTemperature ·Å¼h
-	 * 0001:±`·Å (¹w³]­È) 
-	 * 0002:§NÂÃ
-	 * 0003:§N­á
+	 * è¨­å®šTemperature æº«å±¤
+	 * 0001:å¸¸æº« (é è¨­å€¼) 
+	 * 0002:å†·è—
+	 * 0003:å†·å‡
 	 * @param temperature
 	 */
 	public void setTemperature(String temperature) {
 		Temperature = temperature;
 	}
 	/**
-	 * ¨ú±oDistance ¶ZÂ÷
-	 * 00:¦P¿¤¥« (¹w³]­È) 
-	 * 01:¥~¿¤¥«
-	 * 02:Â÷®q
+	 * å–å¾—Distance è·é›¢
+	 * 00:åŒç¸£å¸‚ (é è¨­å€¼) 
+	 * 01:å¤–ç¸£å¸‚
+	 * 02:é›¢å³¶
 	 * @return Distance
 	 */
 	public String getDistance() {
 		return Distance;
 	}
 	/**
-	 * ³]©wDistance ¶ZÂ÷
-	 * 00:¦P¿¤¥« (¹w³]­È) 
-	 * 01:¥~¿¤¥«
-	 * 02:Â÷®q
+	 * è¨­å®šDistance è·é›¢
+	 * 00:åŒç¸£å¸‚ (é è¨­å€¼) 
+	 * 01:å¤–ç¸£å¸‚
+	 * 02:é›¢å³¶
 	 * @param distance
 	 */
 	public void setDistance(String distance) {
 		Distance = distance;
 	}
 	/**
-	 * ¨ú±oSpecification ³W®æ
-	 * 0001: 60cm (¹w³]­È) 
+	 * å–å¾—Specification è¦æ ¼
+	 * 0001: 60cm (é è¨­å€¼) 
 	 * 0002: 90cm 
 	 * 0003: 120cm 
 	 * 0004: 150cm
@@ -525,8 +525,8 @@ public class ReturnHomeObj {
 		return Specification;
 	}
 	/**
-	 * ³]©wSpecification ³W®æ
-	 * 0001: 60cm (¹w³]­È) 
+	 * è¨­å®šSpecification è¦æ ¼
+	 * 0001: 60cm (é è¨­å€¼) 
 	 * 0002: 90cm 
 	 * 0003: 120cm 
 	 * 0004: 150cm
@@ -536,114 +536,114 @@ public class ReturnHomeObj {
 		Specification = specification;
 	}
 	/**
-	 * ¨ú±oScheduledPickupTime ¹w©w¨ú¥ó®É¬q
+	 * å–å¾—ScheduledPickupTime é å®šå–ä»¶æ™‚æ®µ
 	 * 1: 9~12 
 	 * 2: 12~17 
 	 * 3: 17~20 
-	 * 4:¤£­­®É(©T©w 4 ¤£­­®É)
-	 * (·í¤lª«¬y¿ï¾Ü¦v°t³q®É¡A¸Ó°Ñ¼Æ¥i¤£¶ñ)
+	 * 4:ä¸é™æ™‚(å›ºå®š 4 ä¸é™æ™‚)
+	 * (ç•¶å­ç‰©æµé¸æ“‡å®…é…é€šæ™‚ï¼Œè©²åƒæ•¸å¯ä¸å¡«)
 	 * @return ScheduledPickupTime
 	 */
 	public String getScheduledPickupTime() {
 		return ScheduledPickupTime;
 	}
 	/**
-	 * ³]©wScheduledPickupTime ¹w©w¨ú¥ó®É¬q
+	 * è¨­å®šScheduledPickupTime é å®šå–ä»¶æ™‚æ®µ
 	 * 1: 9~12 
 	 * 2: 12~17 
 	 * 3: 17~20 
-	 * 4:¤£­­®É(©T©w 4 ¤£­­®É)
-	 * (·í¤lª«¬y¿ï¾Ü¦v°t³q®É¡A¸Ó°Ñ¼Æ¥i¤£¶ñ)
+	 * 4:ä¸é™æ™‚(å›ºå®š 4 ä¸é™æ™‚)
+	 * (ç•¶å­ç‰©æµé¸æ“‡å®…é…é€šæ™‚ï¼Œè©²åƒæ•¸å¯ä¸å¡«)
 	 * @param scheduledPickupTime
 	 */
 	public void setScheduledPickupTime(String scheduledPickupTime) {
 		ScheduledPickupTime = scheduledPickupTime;
 	}
 	/**
-	 * ¨ú±oScheduledDeliveryTime ¹w©w°e¹F®É¬q
+	 * å–å¾—ScheduledDeliveryTime é å®šé€é”æ™‚æ®µ
 	 * 1: 9~12 
 	 * 2: 12~17 
 	 * 3: 17~20 
-	 * 4:¤£­­®É 
-	 * 5:20~21(»İ­­©w°Ï°ì¡A¦v°t³q¨S¦³¦¹®É¬q) 
-	 * ·í¤lª«¬y¿ï¾Ü¦v°t³q®É¡A¥i¿ï¾Ü¥H¤U®É¬q 
-	 * 12: (¦­¤È 9~17) 
-	 * 13: (¦­±ß 9~12 & 17~20) 
-	 * 23: (¤È±ß 13~20)
+	 * 4:ä¸é™æ™‚ 
+	 * 5:20~21(éœ€é™å®šå€åŸŸï¼Œå®…é…é€šæ²’æœ‰æ­¤æ™‚æ®µ) 
+	 * ç•¶å­ç‰©æµé¸æ“‡å®…é…é€šæ™‚ï¼Œå¯é¸æ“‡ä»¥ä¸‹æ™‚æ®µ 
+	 * 12: (æ—©åˆ 9~17) 
+	 * 13: (æ—©æ™š 9~12 & 17~20) 
+	 * 23: (åˆæ™š 13~20)
 	 * @return ScheduledDeliveryTime
 	 */
 	public String getScheduledDeliveryTime() {
 		return ScheduledDeliveryTime;
 	}
 	/**
-	 * ³]©wScheduledDeliveryTime ¹w©w°e¹F®É¬q
+	 * è¨­å®šScheduledDeliveryTime é å®šé€é”æ™‚æ®µ
 	 * 1: 9~12 
 	 * 2: 12~17 
 	 * 3: 17~20 
-	 * 4:¤£­­®É 
-	 * 5:20~21(»İ­­©w°Ï°ì¡A¦v°t³q¨S¦³¦¹®É¬q) 
-	 * ·í¤lª«¬y¿ï¾Ü¦v°t³q®É¡A¥i¿ï¾Ü¥H¤U®É¬q 
-	 * 12: (¦­¤È 9~17) 
-	 * 13: (¦­±ß 9~12 & 17~20) 
-	 * 23: (¤È±ß 13~20)
+	 * 4:ä¸é™æ™‚ 
+	 * 5:20~21(éœ€é™å®šå€åŸŸï¼Œå®…é…é€šæ²’æœ‰æ­¤æ™‚æ®µ) 
+	 * ç•¶å­ç‰©æµé¸æ“‡å®…é…é€šæ™‚ï¼Œå¯é¸æ“‡ä»¥ä¸‹æ™‚æ®µ 
+	 * 12: (æ—©åˆ 9~17) 
+	 * 13: (æ—©æ™š 9~12 & 17~20) 
+	 * 23: (åˆæ™š 13~20)
 	 * @param scheduledDeliveryTime
 	 */
 	public void setScheduledDeliveryTime(String scheduledDeliveryTime) {
 		ScheduledDeliveryTime = scheduledDeliveryTime;
 	}
 	/**
-	 * ¨ú±oScheduledDeliveryDate «ü©w°e¹F¤é ·í¤lª«¬y¿ï¾Ü¦v°t³q®É¡A¦¹°Ñ¼Æ¤~¦³§@¥Î
-	 * ¤é´Á«ü©w­­¨î D+3 (D:¸Ó­q³æ«Ø¥ß®É¶¡)
+	 * å–å¾—ScheduledDeliveryDate æŒ‡å®šé€é”æ—¥ ç•¶å­ç‰©æµé¸æ“‡å®…é…é€šæ™‚ï¼Œæ­¤åƒæ•¸æ‰æœ‰ä½œç”¨
+	 * æ—¥æœŸæŒ‡å®šé™åˆ¶ D+3 (D:è©²è¨‚å–®å»ºç«‹æ™‚é–“)
 	 * @return ScheduledDeliveryDate
 	 */
 	public String getScheduledDeliveryDate() {
 		return ScheduledDeliveryDate;
 	}
 	/**
-	 * ³]©wScheduledDeliveryDate «ü©w°e¹F¤é ·í¤lª«¬y¿ï¾Ü¦v°t³q®É¡A¦¹°Ñ¼Æ¤~¦³§@¥Î
-	 * ¤é´Á«ü©w­­¨î D+3 (D:¸Ó­q³æ«Ø¥ß®É¶¡)
+	 * è¨­å®šScheduledDeliveryDate æŒ‡å®šé€é”æ—¥ ç•¶å­ç‰©æµé¸æ“‡å®…é…é€šæ™‚ï¼Œæ­¤åƒæ•¸æ‰æœ‰ä½œç”¨
+	 * æ—¥æœŸæŒ‡å®šé™åˆ¶ D+3 (D:è©²è¨‚å–®å»ºç«‹æ™‚é–“)
 	 * @param scheduledDeliveryDate
 	 */
 	public void setScheduledDeliveryDate(String scheduledDeliveryDate) {
 		ScheduledDeliveryDate = scheduledDeliveryDate;
 	}
 	/**
-	 * ¨ú±oPackageCount ¥]»q¥ó¼Æ ·í¤lª«¬y¿ï¾Ü¦v°t³q®É¡A¦¹°Ñ¼Æ¤~¦³§@¥Î¡A§@¥Î©ó¦P­q³æ½s¸¹¡A¥]»q¥ó¼Æ¡C
+	 * å–å¾—PackageCount åŒ…è£¹ä»¶æ•¸ ç•¶å­ç‰©æµé¸æ“‡å®…é…é€šæ™‚ï¼Œæ­¤åƒæ•¸æ‰æœ‰ä½œç”¨ï¼Œä½œç”¨æ–¼åŒè¨‚å–®ç·¨è™Ÿï¼ŒåŒ…è£¹ä»¶æ•¸ã€‚
 	 * @return PackageCount
 	 */
 	public String getPackageCount() {
 		return PackageCount;
 	}
 	/**
-	 * ³]©wPackageCount ¥]»q¥ó¼Æ ·í¤lª«¬y¿ï¾Ü¦v°t³q®É¡A¦¹°Ñ¼Æ¤~¦³§@¥Î¡A§@¥Î©ó¦P­q³æ½s¸¹¡A¥]»q¥ó¼Æ¡C
+	 * è¨­å®šPackageCount åŒ…è£¹ä»¶æ•¸ ç•¶å­ç‰©æµé¸æ“‡å®…é…é€šæ™‚ï¼Œæ­¤åƒæ•¸æ‰æœ‰ä½œç”¨ï¼Œä½œç”¨æ–¼åŒè¨‚å–®ç·¨è™Ÿï¼ŒåŒ…è£¹ä»¶æ•¸ã€‚
 	 * @param packageCount
 	 */
 	public void setPackageCount(String packageCount) {
 		PackageCount = packageCount;
 	}
 	/**
-	 * ¨ú±oRemark ³Æµù
+	 * å–å¾—Remark å‚™è¨»
 	 * @return Remark
 	 */
 	public String getRemark() {
 		return Remark;
 	}
 	/**
-	 * ³]©wRemark ³Æµù
+	 * è¨­å®šRemark å‚™è¨»
 	 * @param remark
 	 */
 	public void setRemark(String remark) {
 		Remark = remark;
 	}
 	/**
-	 * ¨ú±oPlatformID ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ¡A¦¹°Ñ¼Æ¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î¡A¤@¯ë¼t°Ó¤¶±µ½Ğ©ñªÅ­È¡C­Y¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î®É¡AMerchantID ½Ğ±a½æ®a©Ò¸j©wªºMerchantID¡C
+	 * å–å¾—PlatformID ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›ï¼Œæ­¤åƒæ•¸ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨ï¼Œä¸€èˆ¬å» å•†ä»‹æ¥è«‹æ”¾ç©ºå€¼ã€‚è‹¥ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨æ™‚ï¼ŒMerchantID è«‹å¸¶è³£å®¶æ‰€ç¶å®šçš„MerchantIDã€‚
 	 * @return PlatformID
 	 */
 	public String getPlatformID() {
 		return PlatformID;
 	}
 	/**
-	 * ³]©wPlatformID ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ¡A¦¹°Ñ¼Æ¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î¡A¤@¯ë¼t°Ó¤¶±µ½Ğ©ñªÅ­È¡C­Y¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î®É¡AMerchantID ½Ğ±a½æ®a©Ò¸j©wªºMerchantID¡C
+	 * è¨­å®šPlatformID ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›ï¼Œæ­¤åƒæ•¸ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨ï¼Œä¸€èˆ¬å» å•†ä»‹æ¥è«‹æ”¾ç©ºå€¼ã€‚è‹¥ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨æ™‚ï¼ŒMerchantID è«‹å¸¶è³£å®¶æ‰€ç¶å®šçš„MerchantIDã€‚
 	 * @param platformID
 	 */
 	public void setPlatformID(String platformID) {

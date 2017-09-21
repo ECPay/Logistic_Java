@@ -13,6 +13,6 @@ public class EcpayException extends Error{
 		NewExceptionMessage = newExceptionMessage;
 	}
 	public void ShowExceptionMessage(){
-		System.out.println("µo¥Í¿ù»~: " + getNewExceptionMessage());
+		System.out.println("ç™¼ç”ŸéŒ¯èª¤: " + getNewExceptionMessage());
 	}
 }

@@ -45,7 +45,7 @@ import ecpay.logistics.integration.verification.VerifyUpdateShipmentInfo;
 import ecpay.logistics.integration.verification.VerifyUpdateStoreInfo;
 
 /**
- * ºñ¬Éª«¬y¥ş¥\¯àÃş§O
+ * ç¶ ç•Œç‰©æµå…¨åŠŸèƒ½é¡åˆ¥
  * @author mark.chiu
  *
  */
@@ -69,7 +69,7 @@ public class AllInOne extends AllInOneBase{
 	}
 	
 	/**
-	 * ÀË¬dHashtable¤¤ªºÀË¬d½X¬O§_¥¿½T(½T«O¸ê®Æ¥¼³QÂ«§ï)
+	 * æª¢æŸ¥Hashtableä¸­çš„æª¢æŸ¥ç¢¼æ˜¯å¦æ­£ç¢º(ç¢ºä¿è³‡æ–™æœªè¢«ç«„æ”¹)
 	 * @param Hashtable params
 	 * @return boolean 
 	 */
@@ -91,7 +91,7 @@ public class AllInOne extends AllInOneBase{
 	}
 	
 	/**
-	 * ¹q¤l¦a¹Ï¦ê±µ(¦¹ API ¬°¶W°Ó¨ú³f®É¿ï¾Ü¨ú³f¤À©±®É¨Ï¥Î) 
+	 * é›»å­åœ°åœ–ä¸²æ¥(æ­¤ API ç‚ºè¶…å•†å–è²¨æ™‚é¸æ“‡å–è²¨åˆ†åº—æ™‚ä½¿ç”¨) 
 	 * @param obj
 	 * @return string
 	 */
@@ -105,7 +105,7 @@ public class AllInOne extends AllInOneBase{
 	}
 	
 	/**
-	 * ª«¬y­q³æ²£¥Í
+	 * ç‰©æµè¨‚å–®ç”¢ç”Ÿ
 	 * @param obj
 	 * @return string
 	 */
@@ -156,7 +156,7 @@ public class AllInOne extends AllInOneBase{
 	}
 	
 	/**
-	 * ¦v°t°fª«¬y­q³æ
+	 * å®…é…é€†ç‰©æµè¨‚å–®
 	 * @param obj
 	 * @return string
 	 */
@@ -190,7 +190,7 @@ public class AllInOne extends AllInOneBase{
 	}
 	
 	/**
-	 * ¶W°Ó¨ú³f°fª«¬y­q³æ(¥ş®a¶W°Ó B2C)
+	 * è¶…å•†å–è²¨é€†ç‰©æµè¨‚å–®(å…¨å®¶è¶…å•† B2C)
 	 * @param obj
 	 * @return string
 	 */
@@ -224,7 +224,7 @@ public class AllInOne extends AllInOneBase{
 	}
 	
 	/**
-	 * ¥ş®a°fª«¬y®Ö±b(¥ş®a¶W°Ó B2C)
+	 * å…¨å®¶é€†ç‰©æµæ ¸å¸³(å…¨å®¶è¶…å•† B2C)
 	 * @param obj
 	 * @return string
 	 */
@@ -257,7 +257,7 @@ public class AllInOne extends AllInOneBase{
 	}
 	
 	/**
-	 * ¶W°Ó¨ú³f°fª«¬y­q³æ(µÜº¸´I¶W°Ó B2C)
+	 * è¶…å•†å–è²¨é€†ç‰©æµè¨‚å–®(èŠçˆ¾å¯Œè¶…å•† B2C)
 	 * @param obj
 	 * @return string
 	 */
@@ -291,7 +291,7 @@ public class AllInOne extends AllInOneBase{
 	}
 	
 	/**
-	 * ¶W°Ó¨ú³f°fª«¬y­q³æ(²Î¤@¶W°Ó B2C)
+	 * è¶…å•†å–è²¨é€†ç‰©æµè¨‚å–®(çµ±ä¸€è¶…å•† B2C)
 	 * @param obj
 	 * @return string
 	 */
@@ -325,7 +325,7 @@ public class AllInOne extends AllInOneBase{
 	}
 	
 	/**
-	 * ´£¨Ñ¼t°Ó­×§ï¥X³f¤é´Á¡B¨ú³fªù¥«(²Î¤@¶W°Ó B2C)
+	 * æä¾›å» å•†ä¿®æ”¹å‡ºè²¨æ—¥æœŸã€å–è²¨é–€å¸‚(çµ±ä¸€è¶…å•† B2C)
 	 * @param obj
 	 * @return string
 	 */
@@ -359,7 +359,7 @@ public class AllInOne extends AllInOneBase{
 	}
 	
 	/**
-	 * §ó·sªù¥«(²Î¤@¶W°ÓC2C)
+	 * æ›´æ–°é–€å¸‚(çµ±ä¸€è¶…å•†C2C)
 	 * @param obj
 	 * @return string
 	 */
@@ -393,7 +393,7 @@ public class AllInOne extends AllInOneBase{
 	}
 	
 	/**
-	 * ¨ú®ø­q³æ(²Î¤@¶W°ÓC2C)
+	 * å–æ¶ˆè¨‚å–®(çµ±ä¸€è¶…å•†C2C)
 	 * @param obj
 	 * @return string
 	 */
@@ -426,7 +426,7 @@ public class AllInOne extends AllInOneBase{
 	}
 	
 	/**
-	 * ª«¬y­q³æ¬d¸ß
+	 * ç‰©æµè¨‚å–®æŸ¥è©¢
 	 * @param obj
 	 * @return string
 	 */
@@ -460,7 +460,7 @@ public class AllInOne extends AllInOneBase{
 	}
 	
 	/**
-	 * ²£¥Í¦«¹B³æ(¦v°t)/¤@¬q¼Ğ(¶W°Ó¨ú³f)®æ¦¡(B2C)
+	 * ç”¢ç”Ÿæ‰˜é‹å–®(å®…é…)/ä¸€æ®µæ¨™(è¶…å•†å–è²¨)æ ¼å¼(B2C)
 	 * @param obj
 	 * @return string
 	 */
@@ -480,7 +480,7 @@ public class AllInOne extends AllInOneBase{
 	}
 	
 	/**
-	 * ¦C¦LÃº´Ú³æ(²Î¤@¶W°Ó C2C)
+	 * åˆ—å°ç¹³æ¬¾å–®(çµ±ä¸€è¶…å•† C2C)
 	 * @param obj
 	 * @return string
 	 */
@@ -500,7 +500,7 @@ public class AllInOne extends AllInOneBase{
 	}
 	
 	/**
-	 * ¥ş®a¦C¦L¤p¥Õ³æ(¥ş®a¶W°Ó C2C)
+	 * å…¨å®¶åˆ—å°å°ç™½å–®(å…¨å®¶è¶…å•† C2C)
 	 * @param obj
 	 * @return string
 	 */
@@ -520,7 +520,7 @@ public class AllInOne extends AllInOneBase{
 	}
 	
 	/**
-	 * µÜº¸´I¦C¦L¤p¥Õ³æ(µÜº¸´I¶W°Ó C2C)
+	 * èŠçˆ¾å¯Œåˆ—å°å°ç™½å–®(èŠçˆ¾å¯Œè¶…å•† C2C)
 	 * @param obj
 	 * @return string
 	 */
@@ -540,7 +540,7 @@ public class AllInOne extends AllInOneBase{
 	}
 	
 	/**
-	 * ²£¥Í B2C ´ú¼Ğ¸ê®Æ
+	 * ç”¢ç”Ÿ B2C æ¸¬æ¨™è³‡æ–™
 	 * @param obj
 	 * @return string
 	 */
