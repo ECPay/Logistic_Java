@@ -1,7 +1,7 @@
 package ecpay.logistics.integration.domain;
 
 /**
- * ¹q¤l¦a¹Ï¦ê±µª«¥ó
+ * é›»å­åœ°åœ–ä¸²æ¥ç‰©ä»¶
  * @author mark.chiu
  *
  */
@@ -9,84 +9,84 @@ public class ExpressMapObj {
 	
 	/**
 	 * MerchantID
-	 * ¼t°Ó½s¸¹
+	 * å» å•†ç·¨è™Ÿ
 	 */
 	private String MerchantID = "";
 	
 	/**
 	 * MerchantTradeNo
-	 * ¼t°Ó¥æ©ö½s¸¹
+	 * å» å•†äº¤æ˜“ç·¨è™Ÿ
 	 */
 	private String MerchantTradeNo = "";
 	
 	/**
 	 * LogisticsType
-	 * ª«¬yÃş«¬
+	 * ç‰©æµé¡å‹
 	 */
 	private String LogisticsType = "CVS";
 	
 	/**
 	 * LogisticsSubType
-	 * ª«¬y¤lÃş«¬
+	 * ç‰©æµå­é¡å‹
 	 */
 	private String LogisticsSubType = "";
 	
 	/**
 	 * IsCollection
-	 * ¬O§_¥N¦¬³f´Ú
+	 * æ˜¯å¦ä»£æ”¶è²¨æ¬¾
 	 */
 	private String IsCollection = "";
 	
 	/**
 	 * ServerReplyURL
-	 * Server ºİ¦^ÂĞºô§}
+	 * Server ç«¯å›è¦†ç¶²å€
 	 */
 	private String ServerReplyURL = "";
 	
 	/**
 	 * ExtraData
-	 * ÃB¥~¸ê°T
+	 * é¡å¤–è³‡è¨Š
 	 */
 	private String ExtraData = "";
 	
 	/**
 	 * Device
-	 * ¨Ï¥Î³]³Æ
+	 * ä½¿ç”¨è¨­å‚™
 	 */
 	private String Device = "";
 	
 	/********************* getters and setters *********************/
 	
 	/**
-	 * ¨ú±oMerchantID ¼t°Ó½s¸¹¡A¥Ñºñ¬É¬ì§Ş´£¨Ñ
+	 * å–å¾—MerchantID å» å•†ç·¨è™Ÿï¼Œç”±ç¶ ç•Œç§‘æŠ€æä¾›
 	 * @return MerchantID
 	 */
 	public String getMerchantID() {
 		return MerchantID;
 	}
 	/**
-	 * ³]©wMerchantID ¼t°Ó½s¸¹¡A¥Ñºñ¬É¬ì§Ş´£¨Ñ
+	 * è¨­å®šMerchantID å» å•†ç·¨è™Ÿï¼Œç”±ç¶ ç•Œç§‘æŠ€æä¾›
 	 * @param merchantID
 	 */
 	public void setMerchantID(String merchantID) {
 		MerchantID = merchantID;
 	}
 	/**
-	 * ¨ú±oMerchantTradeNo ¼t°Ó¥æ©ö½s¸¹ 1. ¼t°Ó¥æ©ö½s¸¹§¡¬°°ß¤@­È¡A¤£¥i­«½Æ¨Ï¥Î¡C 2. ­^¼Æ¦r¤j¤p¼g²V¦X¡C
+	 * å–å¾—MerchantTradeNo å» å•†äº¤æ˜“ç·¨è™Ÿ 1. å» å•†äº¤æ˜“ç·¨è™Ÿå‡ç‚ºå”¯ä¸€å€¼ï¼Œä¸å¯é‡è¤‡ä½¿ç”¨ã€‚ 2. è‹±æ•¸å­—å¤§å°å¯«æ··åˆã€‚
 	 * @return MerchantTradeNo
 	 */
 	public String getMerchantTradeNo() {
 		return MerchantTradeNo;
 	}
 	/**
-	 * ³]©wMerchantTradeNo ¼t°Ó¥æ©ö½s¸¹ 1. ¼t°Ó¥æ©ö½s¸¹§¡¬°°ß¤@­È¡A¤£¥i­«½Æ¨Ï¥Î¡C 2. ­^¼Æ¦r¤j¤p¼g²V¦X¡C
+	 * è¨­å®šMerchantTradeNo å» å•†äº¤æ˜“ç·¨è™Ÿ 1. å» å•†äº¤æ˜“ç·¨è™Ÿå‡ç‚ºå”¯ä¸€å€¼ï¼Œä¸å¯é‡è¤‡ä½¿ç”¨ã€‚ 2. è‹±æ•¸å­—å¤§å°å¯«æ··åˆã€‚
 	 * @param merchantTradeNo
 	 */
 	public void setMerchantTradeNo(String merchantTradeNo) {
 		MerchantTradeNo = merchantTradeNo;
 	}
 	/**
-	 * ¨ú±oLogisticsType ª«¬yÃş«¬ 
+	 * å–å¾—LogisticsType ç‰©æµé¡å‹ 
 	 * @return LogisticsType
 	 */
 	public String getLogisticsType() {
@@ -96,86 +96,86 @@ public class ExpressMapObj {
 //		LogisticsType = logisticsType;
 //	}
 	/**
-	 * ¨ú±oLogisticsSubType ª«¬y¤lÃş«¬
+	 * å–å¾—LogisticsSubType ç‰©æµå­é¡å‹
 	 * ---B2C---
-	 * FAMI¡G¥ş®a 
-	 * UNIMART¡G²Î¤@¶W°Ó 
-	 * HILIFE¡GµÜº¸´I
+	 * FAMIï¼šå…¨å®¶ 
+	 * UNIMARTï¼šçµ±ä¸€è¶…å•† 
+	 * HILIFEï¼šèŠçˆ¾å¯Œ
 	 * ---C2C---
-	 * FAMIC2C¡G¥ş®a©±¨ì©± 
-	 * UNIMARTC2C¡G²Î¤@¶W°Ó¥æ³f«K
-	 * HILIFEC2C:µÜº¸´I©±¨ì©±
+	 * FAMIC2Cï¼šå…¨å®¶åº—åˆ°åº— 
+	 * UNIMARTC2Cï¼šçµ±ä¸€è¶…å•†äº¤è²¨ä¾¿
+	 * HILIFEC2C:èŠçˆ¾å¯Œåº—åˆ°åº—
 	 * @return LogisticsSubType
 	 */
 	public String getLogisticsSubType() {
 		return LogisticsSubType;
 	}
 	/**
-	 * ³]©wLogisticsSubType ª«¬y¤lÃş«¬
+	 * è¨­å®šLogisticsSubType ç‰©æµå­é¡å‹
 	 * ---B2C---
-	 * FAMI¡G¥ş®a 
-	 * UNIMART¡G²Î¤@¶W°Ó 
-	 * HILIFE¡GµÜº¸´I
+	 * FAMIï¼šå…¨å®¶ 
+	 * UNIMARTï¼šçµ±ä¸€è¶…å•† 
+	 * HILIFEï¼šèŠçˆ¾å¯Œ
 	 * ---C2C---
-	 * FAMIC2C¡G¥ş®a©±¨ì©± 
-	 * UNIMARTC2C¡G²Î¤@¶W°Ó¥æ³f«K
-	 * HILIFEC2C:µÜº¸´I©±¨ì©±
+	 * FAMIC2Cï¼šå…¨å®¶åº—åˆ°åº— 
+	 * UNIMARTC2Cï¼šçµ±ä¸€è¶…å•†äº¤è²¨ä¾¿
+	 * HILIFEC2C:èŠçˆ¾å¯Œåº—åˆ°åº—
 	 * @param logisticsSubType
 	 */
 	public void setLogisticsSubType(String logisticsSubType) {
 		LogisticsSubType = logisticsSubType;
 	}
 	/**
-	 * ¨ú±oIsCollection ¬O§_¥N¦¬³f´Ú  N¡G¤£¥N¦¬³f´Ú¡C Y¡G¥N¦¬³f´Ú¡C
+	 * å–å¾—IsCollection æ˜¯å¦ä»£æ”¶è²¨æ¬¾  Nï¼šä¸ä»£æ”¶è²¨æ¬¾ã€‚ Yï¼šä»£æ”¶è²¨æ¬¾ã€‚
 	 * @return IsCollection
 	 */
 	public String getIsCollection() {
 		return IsCollection;
 	}
 	/**
-	 * ³]©wIsCollection ¬O§_¥N¦¬³f´Ú  N¡G¤£¥N¦¬³f´Ú¡C Y¡G¥N¦¬³f´Ú¡C
+	 * è¨­å®šIsCollection æ˜¯å¦ä»£æ”¶è²¨æ¬¾  Nï¼šä¸ä»£æ”¶è²¨æ¬¾ã€‚ Yï¼šä»£æ”¶è²¨æ¬¾ã€‚
 	 * @param isCollection
 	 */
 	public void setIsCollection(String isCollection) {
 		IsCollection = isCollection;
 	}
 	/**
-	 * ¨ú±oServerReplyURL Server ºİ¦^ÂĞºô§} ¨ú±o¶W°Ó©±¾Q¥N¸¹µ¥¸ê°T«á¡A·|¦^¶Ç¨ì¦¹ºô§}¡C
+	 * å–å¾—ServerReplyURL Server ç«¯å›è¦†ç¶²å€ å–å¾—è¶…å•†åº—é‹ªä»£è™Ÿç­‰è³‡è¨Šå¾Œï¼Œæœƒå›å‚³åˆ°æ­¤ç¶²å€ã€‚
 	 * @return ServerReplyURL
 	 */
 	public String getServerReplyURL() {
 		return ServerReplyURL;
 	}
 	/**
-	 * ³]©wServerReplyURL ºİ¦^ÂĞºô§} ¨ú±o¶W°Ó©±¾Q¥N¸¹µ¥¸ê°T«á¡A·|¦^¶Ç¨ì¦¹ºô§}¡C
+	 * è¨­å®šServerReplyURL ç«¯å›è¦†ç¶²å€ å–å¾—è¶…å•†åº—é‹ªä»£è™Ÿç­‰è³‡è¨Šå¾Œï¼Œæœƒå›å‚³åˆ°æ­¤ç¶²å€ã€‚
 	 * @param serverReplyURL
 	 */
 	public void setServerReplyURL(String serverReplyURL) {
 		ServerReplyURL = serverReplyURL;
 	}
 	/**
-	 * ¨ú±oExtraData ÃB¥~¸ê°T ¨Ñ¼t°Ó¶Ç»¼«O¯dªº¸ê°T¡A¦b¦^¶Ç°Ñ¼Æ¤¤¡A·|­ì­È¦^¶Ç
+	 * å–å¾—ExtraData é¡å¤–è³‡è¨Š ä¾›å» å•†å‚³éä¿ç•™çš„è³‡è¨Šï¼Œåœ¨å›å‚³åƒæ•¸ä¸­ï¼ŒæœƒåŸå€¼å›å‚³
 	 * @return ExtraData
 	 */
 	public String getExtraData() {
 		return ExtraData;
 	}
 	/**
-	 * ³]©wExtraData ÃB¥~¸ê°T ¨Ñ¼t°Ó¶Ç»¼«O¯dªº¸ê°T¡A¦b¦^¶Ç°Ñ¼Æ¤¤¡A·|­ì­È¦^¶Ç
+	 * è¨­å®šExtraData é¡å¤–è³‡è¨Š ä¾›å» å•†å‚³éä¿ç•™çš„è³‡è¨Šï¼Œåœ¨å›å‚³åƒæ•¸ä¸­ï¼ŒæœƒåŸå€¼å›å‚³
 	 * @param extraData
 	 */
 	public void setExtraData(String extraData) {
 		ExtraData = extraData;
 	}
 	/**
-	 * ¨ú±oDevice ¨Ï¥Î³]³Æ 0¡GPC¡]¹w³]­È¡^ 1¡GMobile
+	 * å–å¾—Device ä½¿ç”¨è¨­å‚™ 0ï¼šPCï¼ˆé è¨­å€¼ï¼‰ 1ï¼šMobile
 	 * @return Device
 	 */
 	public String getDevice() {
 		return Device;
 	}
 	/**
-	 * ³]©wDevice ¨Ï¥Î³]³Æ 0¡GPC¡]¹w³]­È¡^ 1¡GMobile
+	 * è¨­å®šDevice ä½¿ç”¨è¨­å‚™ 0ï¼šPCï¼ˆé è¨­å€¼ï¼‰ 1ï¼šMobile
 	 * @param device
 	 */
 	public void setDevice(String device) {

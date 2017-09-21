@@ -1,7 +1,7 @@
 package ecpay.logistics.integration.domain;
 
 /**
- * ´£¨Ñ¼t°Ó­×§ï¥X³f¤é´Á¡B¨ú³fªù¥«(²Î¤@¶W°ÓB2C)ª«¥ó
+ * æä¾›å» å•†ä¿®æ”¹å‡ºè²¨æ—¥æœŸã€å–è²¨é–€å¸‚(çµ±ä¸€è¶…å•†B2C)ç‰©ä»¶
  * @author mark.chiu
  *
  */
@@ -9,101 +9,101 @@ public class UpdateShipmentInfoObj {
 	
 	/**
 	 * MerchantID
-	 * ¼t°Ó½s¸¹
+	 * å» å•†ç·¨è™Ÿ
 	 */
 	private String MerchantID = "";
 	
 	/**
 	 * AllPayLogisticsID
-	 * ª«¬y¥æ©ö½s¸¹
+	 * ç‰©æµäº¤æ˜“ç·¨è™Ÿ
 	 */
 	private String AllPayLogisticsID = "";
 	
 	/**
 	 * ShipmentDate
-	 * ª«¬y­q³æ¥X³f¤é´Á
+	 * ç‰©æµè¨‚å–®å‡ºè²¨æ—¥æœŸ
 	 */
 	private String ShipmentDate = "";
 	
 	/**
 	 * ReceiverStoreID
-	 * ª«¬y­q³æ¨ú³fªù¥«
+	 * ç‰©æµè¨‚å–®å–è²¨é–€å¸‚
 	 */
 	private String ReceiverStoreID = "";
 	
 	/**
 	 * PlatformID
-	 * ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹
+	 * ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ
 	 */
 	private String PlatformID = "";
 	
 	/********************* getters and setters *********************/
 	
 	/**
-	 * ¨ú±oMerchantID ¼t°Ó½s¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ
+	 * å–å¾—MerchantID å» å•†ç·¨è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›
 	 * @return MerchantID
 	 */
 	public String getMerchantID() {
 		return MerchantID;
 	}
 	/**
-	 * ³]©wMerchantID ¼t°Ó½s¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ
+	 * è¨­å®šMerchantID å» å•†ç·¨è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›
 	 * @param merchantID
 	 */
 	public void setMerchantID(String merchantID) {
 		MerchantID = merchantID;
 	}
 	/**
-	 * ¨ú±oAllPayLogisticsID ª«¬y¥æ©ö½s¸¹
+	 * å–å¾—AllPayLogisticsID ç‰©æµäº¤æ˜“ç·¨è™Ÿ
 	 * @return AllPayLogisticsID
 	 */
 	public String getAllPayLogisticsID() {
 		return AllPayLogisticsID;
 	}
 	/**
-	 * ³]©wAllPayLogisticsID ª«¬y¥æ©ö½s¸¹
+	 * è¨­å®šAllPayLogisticsID ç‰©æµäº¤æ˜“ç·¨è™Ÿ
 	 * @param allPayLogisticsID
 	 */
 	public void setAllPayLogisticsID(String allPayLogisticsID) {
 		AllPayLogisticsID = allPayLogisticsID;
 	}
 	/**
-	 * ¨ú±oShipmentDate ª«¬y­q³æ¥X³f¤é´Á ª«¬y­q³æ¥X³f¤é´Á¡Bª«¬y­q³æ¨ú³fªù¥«»İ¾Ü¤@¥²¶ñ
+	 * å–å¾—ShipmentDate ç‰©æµè¨‚å–®å‡ºè²¨æ—¥æœŸ ç‰©æµè¨‚å–®å‡ºè²¨æ—¥æœŸã€ç‰©æµè¨‚å–®å–è²¨é–€å¸‚éœ€æ“‡ä¸€å¿…å¡«
 	 * @return ShipmentDate
 	 */
 	public String getShipmentDate() {
 		return ShipmentDate;
 	}
 	/**
-	 * ³]©wShipmentDate ª«¬y­q³æ¥X³f¤é´Á ª«¬y­q³æ¥X³f¤é´Á¡Bª«¬y­q³æ¨ú³fªù¥«»İ¾Ü¤@¥²¶ñ
+	 * è¨­å®šShipmentDate ç‰©æµè¨‚å–®å‡ºè²¨æ—¥æœŸ ç‰©æµè¨‚å–®å‡ºè²¨æ—¥æœŸã€ç‰©æµè¨‚å–®å–è²¨é–€å¸‚éœ€æ“‡ä¸€å¿…å¡«
 	 * @param shipmentDate
 	 */
 	public void setShipmentDate(String shipmentDate) {
 		ShipmentDate = shipmentDate;
 	}
 	/**
-	 * ¨ú±oReceiverStoreID ª«¬y­q³æ¨ú³fªù¥« ª«¬y­q³æ¥X³f¤é´Á¡Bª«¬y­q³æ¨ú³fªù¥«»İ¾Ü¤@¥²¶ñ
+	 * å–å¾—ReceiverStoreID ç‰©æµè¨‚å–®å–è²¨é–€å¸‚ ç‰©æµè¨‚å–®å‡ºè²¨æ—¥æœŸã€ç‰©æµè¨‚å–®å–è²¨é–€å¸‚éœ€æ“‡ä¸€å¿…å¡«
 	 * @return ReceiverStoreID
 	 */
 	public String getReceiverStoreID() {
 		return ReceiverStoreID;
 	}
 	/**
-	 * ³]©wReceiverStoreID ª«¬y­q³æ¨ú³fªù¥« ª«¬y­q³æ¥X³f¤é´Á¡Bª«¬y­q³æ¨ú³fªù¥«»İ¾Ü¤@¥²¶ñ
+	 * è¨­å®šReceiverStoreID ç‰©æµè¨‚å–®å–è²¨é–€å¸‚ ç‰©æµè¨‚å–®å‡ºè²¨æ—¥æœŸã€ç‰©æµè¨‚å–®å–è²¨é–€å¸‚éœ€æ“‡ä¸€å¿…å¡«
 	 * @param receiverStoreID
 	 */
 	public void setReceiverStoreID(String receiverStoreID) {
 		ReceiverStoreID = receiverStoreID;
 	}
 	/**
-	 * ¨ú±oPlatformID ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ¡A¦¹°Ñ¼Æ¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î¡A¤@¯ë¼t°Ó¤¶±µ½Ğ©ñªÅ­È¡C­Y¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î®É¡AMerchantID ½Ğ±a½æ®a©Ò¸j©wªºMerchantID
+	 * å–å¾—PlatformID ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›ï¼Œæ­¤åƒæ•¸ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨ï¼Œä¸€èˆ¬å» å•†ä»‹æ¥è«‹æ”¾ç©ºå€¼ã€‚è‹¥ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨æ™‚ï¼ŒMerchantID è«‹å¸¶è³£å®¶æ‰€ç¶å®šçš„MerchantID
 	 * @return PlatformID
 	 */
 	public String getPlatformID() {
 		return PlatformID;
 	}
 	/**
-	 * ³]©wPlatformID ¯S¬ù¦X§@¥­¥x°Ó¥N¸¹ ¥Ñºñ¬É¬ì§Ş´£¨Ñ¡A¦¹°Ñ¼Æ¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î¡A¤@¯ë¼t°Ó¤¶±µ½Ğ©ñªÅ­È¡C­Y¬°±M®×¦X§@ªº¥­¥x°Ó¨Ï¥Î®É¡AMerchantID ½Ğ±a½æ®a©Ò¸j©wªºMerchantID
+	 * è¨­å®šPlatformID ç‰¹ç´„åˆä½œå¹³å°å•†ä»£è™Ÿ ç”±ç¶ ç•Œç§‘æŠ€æä¾›ï¼Œæ­¤åƒæ•¸ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨ï¼Œä¸€èˆ¬å» å•†ä»‹æ¥è«‹æ”¾ç©ºå€¼ã€‚è‹¥ç‚ºå°ˆæ¡ˆåˆä½œçš„å¹³å°å•†ä½¿ç”¨æ™‚ï¼ŒMerchantID è«‹å¸¶è³£å®¶æ‰€ç¶å®šçš„MerchantID
 	 * @param platformID
 	 */
 	public void setPlatformID(String platformID) {

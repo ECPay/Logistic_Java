@@ -33,7 +33,7 @@ public class LogisticsVerifyBase {
 	
 	protected void requireCheck(String FieldName, String objValue, String require){
 		if(require.equals("1") && objValue.isEmpty())
-			throw new EcpayException(FieldName+"¬°¥²¶ñ");
+			throw new EcpayException(FieldName+"ç‚ºå¿…å¡«");
 	}
 	
 	protected void valueCheck(String type, String objValue, Element ele){
@@ -65,13 +65,13 @@ public class LogisticsVerifyBase {
 			}
 			int value = Integer.valueOf(objValue);
 			if(mode.equals("GE") && value < Integer.valueOf(minimum)){
-				throw new EcpayException(ele.getAttribute("name")+"¤£¯à¤p©ó"+minimum);
+				throw new EcpayException(ele.getAttribute("name")+"ä¸èƒ½å°æ–¼"+minimum);
 			} else if(mode.equals("LE") && value > Integer.valueOf(maximum)){
-				throw new EcpayException(ele.getAttribute("name")+"¤£¯à¤j©ó"+maximum);
+				throw new EcpayException(ele.getAttribute("name")+"ä¸èƒ½å¤§æ–¼"+maximum);
 			} else if(mode.equals("BETWEEN") && value < Integer.valueOf(minimum) && value > Integer.valueOf(maximum)){
-				throw new EcpayException(ele.getAttribute("name")+"¥²¶·¤¶©ó"+minimum+"©M"+maximum+"¤§¶¡");
+				throw new EcpayException(ele.getAttribute("name")+"å¿…é ˆä»‹æ–¼"+minimum+"å’Œ"+maximum+"ä¹‹é–“");
 			} else if(mode.equals("EXCLUDE") && value >= Integer.valueOf(minimum) && value <= Integer.valueOf(maximum)){
-				throw new EcpayException(ele.getAttribute("name")+"¥²¶·¤p©ó"+minimum+"©Î¤j©ó"+maximum);
+				throw new EcpayException(ele.getAttribute("name")+"å¿…é ˆå°æ–¼"+minimum+"æˆ–å¤§æ–¼"+maximum);
 			}
 		} else if(type.equals("DepOpt")){
 			// TODO
@@ -80,102 +80,102 @@ public class LogisticsVerifyBase {
 	
 	public void verifyCreate(Object obj){
 		if(obj instanceof CreateCVSObj){
-			// ¤ñ¹ï¯S®íÄæ¦ì­È¬Û¨Ì»İ¨D-ServerReplyURL¤£¥i¬°ªÅ
+			// æ¯”å°ç‰¹æ®Šæ¬„ä½å€¼ç›¸ä¾éœ€æ±‚-ServerReplyURLä¸å¯ç‚ºç©º
 			if(((CreateCVSObj) obj).getServerReplyURL().isEmpty())
 				throw new EcpayException("ServerReplyURL cannot be empty.");
-			// LogisticsSubType ¤£¯à¬° HOME
+			// LogisticsSubType ä¸èƒ½ç‚º HOME
 			if(((CreateCVSObj) obj).getLogisticsSubType().equals("TCAT") || ((CreateCVSObj) obj).getLogisticsSubType().equals("ECAN"))
 				throw new EcpayException("LogisticsSubType cannot be "+((CreateCVSObj) obj).getLogisticsSubType()+" when LogisticsType is CVS.");
-			//[LogisticsSubType]¬°UNIMART => UNIMART¬ÛÃö³W«h
+			//[LogisticsSubType]ç‚ºUNIMART => UNIMARTç›¸é—œè¦å‰‡
 			else if(((CreateCVSObj) obj).getLogisticsSubType().equals("UNIMART")){
-				// [LogisticsSubType]¬°UNIMART => GoodsAmount must be Between 1 and 19,999
+				// [LogisticsSubType]ç‚ºUNIMART => GoodsAmount must be Between 1 and 19,999
 				if(Integer.parseInt(((CreateCVSObj) obj).getGoodsAmount()) > 19999 || Integer.parseInt(((CreateCVSObj) obj).getGoodsAmount()) < 1)
 					throw new EcpayException("GoodsAmount cannot be "+((CreateCVSObj) obj).getGoodsAmount()+" when LogisticsSubType is UNIMART.");
-				// [LogisticsSubType]¬°UNIMART => ReceiverCellPhone Can Not be empty
+				// [LogisticsSubType]ç‚ºUNIMART => ReceiverCellPhone Can Not be empty
 				if(((CreateCVSObj) obj).getReceiverCellPhone().isEmpty())
 					throw new EcpayException("ReceiverCellPhone cannot be empty when LogisticsSubType is UNIMART.");
-				// [LogisticsSubType]¬°UNIMART => ReceiverStoreID Can Not be empty
+				// [LogisticsSubType]ç‚ºUNIMART => ReceiverStoreID Can Not be empty
 				if(((CreateCVSObj) obj).getReceiverStoreID().isEmpty())
 					throw new EcpayException("ReceiverStoreID cannot be empty when LogisticsSubType is UNIMART.");
-				// [LogisticsSubType]¬°UNIMART => ReturnStoreID Must be empty
+				// [LogisticsSubType]ç‚ºUNIMART => ReturnStoreID Must be empty
 				if(!((CreateCVSObj) obj).getReturnStoreID().isEmpty())
 					throw new EcpayException("ReturnStoreID must be empty when LogisticsSubType is UNIMART.");
-			// [LogisticsSubType]¬°FAMI => FAMI¬ÛÃö³W«h
+			// [LogisticsSubType]ç‚ºFAMI => FAMIç›¸é—œè¦å‰‡
 			} else if(((CreateCVSObj) obj).getLogisticsSubType().equals("FAMI")){
-				// [LogisticsSubType]¬°FAMI => ReceiverCellPhone Can Not be empty
+				// [LogisticsSubType]ç‚ºFAMI => ReceiverCellPhone Can Not be empty
 				if(((CreateCVSObj) obj).getReceiverCellPhone().isEmpty())
 					throw new EcpayException("ReceiverCellPhone cannot be empty when LogisticsSubType is FAMI.");
-				// [LogisticsSubType]¬°FAMI => ReturnStoreID Can Not be empty
+				// [LogisticsSubType]ç‚ºFAMI => ReturnStoreID Can Not be empty
 				if(((CreateCVSObj) obj).getReceiverStoreID().isEmpty())
 					throw new EcpayException("ReceiverStoreID cannot be empty when LogisticsSubType is FAMI.");
-				// [LogisticsSubType]¬°FAMI => ReturnStoreID Must be empty
+				// [LogisticsSubType]ç‚ºFAMI => ReturnStoreID Must be empty
 				if(!((CreateCVSObj) obj).getReturnStoreID().isEmpty())
 					throw new EcpayException("ReturnStoreID must be empty when LogisticsSubType is FAMI.");
-			// [LogisticsSubType]¬°HILIFE => HILIFE¬ÛÃö³W«h
+			// [LogisticsSubType]ç‚ºHILIFE => HILIFEç›¸é—œè¦å‰‡
 			} else if(((CreateCVSObj) obj).getLogisticsSubType().equals("HILIFE")){
-				// [LogisticsSubType]¬°HILIFE => ReceiverStoreID Can Not be empty
+				// [LogisticsSubType]ç‚ºHILIFE => ReceiverStoreID Can Not be empty
 				if(((CreateCVSObj) obj).getReceiverStoreID().isEmpty())
 					throw new EcpayException("ReceiverStoreID cannot be empty when LogisticsSubType is HILIFE.");
-				// [LogisticsSubType]¬°HILIFE => ReturnStoreID Must be empty
+				// [LogisticsSubType]ç‚ºHILIFE => ReturnStoreID Must be empty
 				if(!((CreateCVSObj) obj).getReturnStoreID().isEmpty())
 					throw new EcpayException("ReturnStoreID must be empty when LogisticsSubType is HILIFE.");
-			// [LogisticsSubType]¬°UNIMARTC2C => UNIMARTC2C¬ÛÃö³W«h
+			// [LogisticsSubType]ç‚ºUNIMARTC2C => UNIMARTC2Cç›¸é—œè¦å‰‡
 			} else if(((CreateCVSObj) obj).getLogisticsSubType().equals("UNIMARTC2C")){
-				// [LogisticsSubType]¬°UNIMARTC2C => GoodsAmount must be Between 1 and 19,999
+				// [LogisticsSubType]ç‚ºUNIMARTC2C => GoodsAmount must be Between 1 and 19,999
 				if(Integer.parseInt(((CreateCVSObj) obj).getGoodsAmount()) > 19999 || Integer.parseInt(((CreateCVSObj) obj).getGoodsAmount()) < 1)
 					throw new EcpayException("GoodsAmount cannot be "+((CreateCVSObj) obj).getGoodsAmount()+" when LogisticsSubType is UNIMARTC2C.");
-				// [LogisticsSubType]¬°UNIMARTC2C => GoodsAmount must be equal CollectionAmount
+				// [LogisticsSubType]ç‚ºUNIMARTC2C => GoodsAmount must be equal CollectionAmount
 				if(!((CreateCVSObj) obj).getCollectionAmount().isEmpty())
 					if(!((CreateCVSObj) obj).getGoodsAmount().equals(((CreateCVSObj) obj).getCollectionAmount()))
 						throw new EcpayException("GoodsAmount("+((CreateCVSObj) obj).getGoodsAmount()+") cannot be equal to CollectionAmount("+((CreateCVSObj) obj).getCollectionAmount()+") when LogisticsSubType is UNIMARTC2C.");
-				// [LogisticsSubType]¬°UNIMARTC2C => SenderCellPhone Can Not be empty
+				// [LogisticsSubType]ç‚ºUNIMARTC2C => SenderCellPhone Can Not be empty
 				if(((CreateCVSObj) obj).getSenderCellPhone().isEmpty())
 					throw new EcpayException("SenderCellPhone cannot be empty when LogisticsSubType is UNIMARTC2C.");
-				// [LogisticsSubType]¬°UNIMARTC2C => ReceiverCellPhone Can Not be empty
+				// [LogisticsSubType]ç‚ºUNIMARTC2C => ReceiverCellPhone Can Not be empty
 				if(((CreateCVSObj) obj).getReceiverCellPhone().isEmpty())
 					throw new EcpayException("ReceiverCellPhone cannot be empty when LogisticsSubType is UNIMARTC2C.");
-				// [LogisticsSubType]¬°UNIMARTC2C => GoodsName Can Not be empty
+				// [LogisticsSubType]ç‚ºUNIMARTC2C => GoodsName Can Not be empty
 				if(((CreateCVSObj) obj).getGoodsName().isEmpty())
 					throw new EcpayException("GoodsName cannot be empty when LogisticsSubType is UNIMARTC2C.");
-				// [LogisticsSubType]¬°UNIMARTC2C => LogisticsC2CReplyURL Can Not be empty
+				// [LogisticsSubType]ç‚ºUNIMARTC2C => LogisticsC2CReplyURL Can Not be empty
 				if(((CreateCVSObj) obj).getLogisticsC2CReplyURL().isEmpty())
 					throw new EcpayException("LogisticsC2CReplyURL cannot be empty when LogisticsSubType is UNIMARTC2C.");
-				// [LogisticsSubType]¬°UNIMARTC2C => ReturnStoreID Can Not be empty
+				// [LogisticsSubType]ç‚ºUNIMARTC2C => ReturnStoreID Can Not be empty
 				if(((CreateCVSObj) obj).getReceiverStoreID().isEmpty())
 					throw new EcpayException("ReceiverStoreID cannot be empty when LogisticsSubType is UNIMARTC2C.");
-			// [LogisticsSubType]¬°FAMIC2C => FAMIC2C¬ÛÃö³W«h
+			// [LogisticsSubType]ç‚ºFAMIC2C => FAMIC2Cç›¸é—œè¦å‰‡
 			} else if(((CreateCVSObj) obj).getLogisticsSubType().equals("FAMIC2C")){
-				// [LogisticsSubType]¬°FAMIC2C => ReceiverCellPhone Cannot be empty
+				// [LogisticsSubType]ç‚ºFAMIC2C => ReceiverCellPhone Cannot be empty
 				if(((CreateCVSObj) obj).getReceiverCellPhone().isEmpty())
 					throw new EcpayException("ReceiverCellPhone cannot be empty when LogisticsSubType is FAMIC2C.");
-				// [LogisticsSubType]¬°FAMIC2C => ReturnStoreID Can Not be empty
+				// [LogisticsSubType]ç‚ºFAMIC2C => ReturnStoreID Can Not be empty
 				if(((CreateCVSObj) obj).getReceiverStoreID().isEmpty())
 					throw new EcpayException("ReceiverStoreID cannot be empty when LogisticsSubType is FAMIC2C.");
-			// [LogisticsSubType]¬°HILIFEC2C => HILIFEC2C¬ÛÃö³W«h
+			// [LogisticsSubType]ç‚ºHILIFEC2C => HILIFEC2Cç›¸é—œè¦å‰‡
 			} else if(((CreateCVSObj) obj).getLogisticsSubType().equals("HILIFEC2C")){
-				// [LogisticsSubType]¬°HILIFEC2C => GoodsName Can Not be empty
+				// [LogisticsSubType]ç‚ºHILIFEC2C => GoodsName Can Not be empty
 				if(((CreateCVSObj) obj).getGoodsName().isEmpty())
 					throw new EcpayException("GoodsName cannot be empty when LogisticsSubType is HILIFEC2C.");
-				// [LogisticsSubType]¬°HILIFEC2C => SenderCellPhone Can Not be empty
+				// [LogisticsSubType]ç‚ºHILIFEC2C => SenderCellPhone Can Not be empty
 				if(((CreateCVSObj) obj).getSenderCellPhone().isEmpty())
 					throw new EcpayException("SenderCellPhone cannot be empty when LogisticsSubType is HILIFEC2C.");
-				// [LogisticsSubType]¬°HILIFEC2C => ReceiverCellPhone Can Not be empty
+				// [LogisticsSubType]ç‚ºHILIFEC2C => ReceiverCellPhone Can Not be empty
 				if(((CreateCVSObj) obj).getReceiverCellPhone().isEmpty())
 					throw new EcpayException("ReceiverCellPhone cannot be empty when LogisticsSubType is HILIFEC2C.");
-				// [LogisticsSubType]¬°HILIFEC2C => ReturnStoreID Can Not be empty
+				// [LogisticsSubType]ç‚ºHILIFEC2C => ReturnStoreID Can Not be empty
 				if(((CreateCVSObj) obj).getReceiverStoreID().isEmpty())
 					throw new EcpayException("ReceiverStoreID cannot be empty when LogisticsSubType is HILIFEC2C.");
 			}
 			if(((CreateCVSObj) obj).getReceiverStoreID().isEmpty() && ((CreateCVSObj) obj).getReturnStoreID().isEmpty())
 				throw new EcpayException("ReceiverStoreID and ReturnStoreID cannot both be empty.");
 		} else if(obj instanceof CreateHomeObj){
-			// ¤ñ¹ï¯S®íÄæ¦ì­È¬Û¨Ì»İ¨D-ServerReplyURL¤£¥i¬°ªÅ
+			// æ¯”å°ç‰¹æ®Šæ¬„ä½å€¼ç›¸ä¾éœ€æ±‚-ServerReplyURLä¸å¯ç‚ºç©º
 			if(((CreateHomeObj) obj).getServerReplyURL().isEmpty())
 				throw new EcpayException("ServerReplyURL cannot be empty.");
-			// LogisticsSubType¤£¯à¤£¬°TCAT and ECAN
+			// LogisticsSubTypeä¸èƒ½ä¸ç‚ºTCAT and ECAN
 			if(!((CreateHomeObj) obj).getLogisticsSubType().equals("TCAT") && !((CreateHomeObj) obj).getLogisticsSubType().equals("ECAN"))
 				throw new EcpayException("LogisticsSubType cannot be "+((CreateHomeObj) obj).getLogisticsSubType()+" when LogisticsType is Home.");
-			// IsCollection ¤£¯à¬°Y
+			// IsCollection ä¸èƒ½ç‚ºY
 			if(((CreateHomeObj) obj).getIsCollection().equals("Y"))
 				throw new EcpayException("IsCollection cannot be Y when LogisticsType is Home.");
 			// SenderPhone and SenderCellPhone cannot both be empty
@@ -184,34 +184,34 @@ public class LogisticsVerifyBase {
 			// ReceiverPhone and ReceiverCellPhone Can Not Both be empty
 			if(((CreateHomeObj) obj).getReceiverPhone().isEmpty() && ((CreateHomeObj) obj).getReceiverCellPhone().isEmpty())
 				throw new EcpayException("ReceiverPhone and ReceiverCellPhone cannot both be empty when LogisticsType is Home.");
-			// [LogisticsType]¬°Home¥B[LogisticsSubType]¬°ECAN
+			// [LogisticsType]ç‚ºHomeä¸”[LogisticsSubType]ç‚ºECAN
 			if(((CreateHomeObj) obj).getLogisticsSubType().equals("ECAN")){
-				// [LogisticsSubType]¬°ECAN => Temperature ¥u¯à¬°0001±`·Å
+				// [LogisticsSubType]ç‚ºECAN => Temperature åªèƒ½ç‚º0001å¸¸æº«
 				if(!((CreateHomeObj) obj).getTemperature().equals("0001"))
 					throw new EcpayException("Temperature cannot be "+((CreateHomeObj) obj).getTemperature()+" when LogisticsSubType is ECAN.");
-				// [LogisticsSubType]¬°ECAN => ScheduledDeliveryTime ¤£¯à¬°5:20~21
+				// [LogisticsSubType]ç‚ºECAN => ScheduledDeliveryTime ä¸èƒ½ç‚º5:20~21
 				if(((CreateHomeObj) obj).getScheduledDeliveryTime().equals("5"))
 					throw new EcpayException("ScheduledDeliveryTime cannot be 5 when LogisticsSubType is ECAN.");
-				// [LogisticsSubType]¬°ECAN => PackageCount ½d³ò¬°1¨ì999
+				// [LogisticsSubType]ç‚ºECAN => PackageCount ç¯„åœç‚º1åˆ°999
 				System.out.println(((CreateHomeObj) obj).getPackageCount());
 				if(Integer.parseInt(((CreateHomeObj) obj).getPackageCount()) < 1 || Integer.parseInt(((CreateHomeObj) obj).getPackageCount()) > 999)
 					throw new EcpayException("PackageCount should be between 1 and 999 when LogisticsSubType is ECAN.");
-			// [LogisticsType]¬°Home¥B[LogisticsSubType]¬°TCAT
+			// [LogisticsType]ç‚ºHomeä¸”[LogisticsSubType]ç‚ºTCAT
 			} else if(((CreateHomeObj) obj).getLogisticsSubType().equals("TCAT")){
-				// [LogisticsSubType]¬°TCAT => ScheduledDeliveryTime ¤£¯à¬°12:9~17, 13:9~12&17~20, 23:13~20
+				// [LogisticsSubType]ç‚ºTCAT => ScheduledDeliveryTime ä¸èƒ½ç‚º12:9~17, 13:9~12&17~20, 23:13~20
 				if(!((CreateHomeObj) obj).getScheduledDeliveryTime().isEmpty())
 					if(Integer.parseInt(((CreateHomeObj) obj).getScheduledDeliveryTime()) <= 1 && Integer.parseInt(((CreateHomeObj) obj).getScheduledDeliveryTime()) >= 23)
 						throw new EcpayException("ScheduledDeliveryTime cannot be "+((CreateHomeObj) obj).getScheduledDeliveryTime()+" when LogisticsSubType is TCAT.");
-				// [LogisticsSubType]¬°TCAT => ScheduledPickupTime ¤£¥i¬°ªÅ
+				// [LogisticsSubType]ç‚ºTCAT => ScheduledPickupTime ä¸å¯ç‚ºç©º
 				if(((CreateHomeObj) obj).getScheduledPickupTime().isEmpty())
 					throw new EcpayException("ScheduledPickupTime cannot be empty when LogisticsSubType is TCAT.");
 			}
-			// [Temperature]¬°0003§N­á => Specification ¤£¯à¬° 0004:150cm
+			// [Temperature]ç‚º0003å†·å‡ => Specification ä¸èƒ½ç‚º 0004:150cm
 			if(((CreateHomeObj) obj).getTemperature().equals("0003"))
 				if(((CreateHomeObj) obj).getSpecification().equals("0004"))
 					throw new EcpayException("Specification cannot be 0004 when Temperature is 0003");
 		} else{
-			throw new EcpayException("¶Ç¤J¿ù»~ªºª«¥ó!");
+			throw new EcpayException("å‚³å…¥éŒ¯èª¤çš„ç‰©ä»¶!");
 		}
 	}
 	
@@ -246,34 +246,34 @@ public class LogisticsVerifyBase {
 				throw new EcpayException("SenderAddress or ReceiverAddress must be 7-61 alphabets.");
 			if(!Pattern.matches("^\\d{3,5}$", obj.getSenderZipCode()) || !Pattern.matches("^\\d{3,5}$", obj.getReceiverZipCode()))
 				throw new EcpayException("SenderZipCode or ReceiverZipCode must be 3-5 numbers.");
-			// [LogisitcsSubType]¬°TCAT or ECAN => SenderPhone and SenderCellPhone Can Not Both be empty
+			// [LogisitcsSubType]ç‚ºTCAT or ECAN => SenderPhone and SenderCellPhone Can Not Both be empty
 			if(obj.getSenderPhone().isEmpty() && obj.getSenderCellPhone().isEmpty())
 				throw new EcpayException("SenderPhone and SenderCellPhone cannot both be empty when LogisticsType is Home.");
-			// [LogisitcsSubType]¬°TCAT or ECAN => ReceiverPhone and ReceiverCellPhone Can Not Both be empty
+			// [LogisitcsSubType]ç‚ºTCAT or ECAN => ReceiverPhone and ReceiverCellPhone Can Not Both be empty
 			if(obj.getReceiverPhone().isEmpty() && obj.getReceiverCellPhone().isEmpty())
 				throw new EcpayException("ReceiverPhone and ReceiverCellPhone cannot both be empty when LogisticsType is Home.");
-			// [LogisticsSubType]¬°ECAN
+			// [LogisticsSubType]ç‚ºECAN
 			if(obj.getLogisticsSubType().equals("ECAN")){
-				// [LogisticsSubType]¬°ECAN => Temperature ¥u¯à¬°0001±`·Å
+				// [LogisticsSubType]ç‚ºECAN => Temperature åªèƒ½ç‚º0001å¸¸æº«
 				if(!obj.getTemperature().equals("0001"))
 					throw new EcpayException("Temperature cannot be "+obj.getTemperature()+" when LogisticsSubType is ECAN.");
-				// [LogisticsSubType]¬°ECAN => ScheduledDeliveryTime ¤£¯à¬°5:20~21
+				// [LogisticsSubType]ç‚ºECAN => ScheduledDeliveryTime ä¸èƒ½ç‚º5:20~21
 				if(obj.getScheduledDeliveryTime().equals("5"))
 					throw new EcpayException("ScheduledDeliveryTime cannot be 5 when LogisticsSubType is ECAN.");
-				// [LogisticsSubType]¬°ECAN => PackageCount ½d³ò¬°1¨ì999
+				// [LogisticsSubType]ç‚ºECAN => PackageCount ç¯„åœç‚º1åˆ°999
 				if(Integer.parseInt(obj.getPackageCount()) < 1 || Integer.parseInt(obj.getPackageCount()) > 999)
 					throw new EcpayException("PackageCount should be between 1 and 999 when LogisticsSubType is ECAN.");
-			// [LogisticsSubType]¬°TCAT
+			// [LogisticsSubType]ç‚ºTCAT
 			} else if(obj.getLogisticsSubType().equals("TCAT")){
-				// [LogisticsSubType]¬°TCAT => ScheduledDeliveryTime ¤£¯à¬°12:9~17, 13:9~12&17~20, 23:13~20
+				// [LogisticsSubType]ç‚ºTCAT => ScheduledDeliveryTime ä¸èƒ½ç‚º12:9~17, 13:9~12&17~20, 23:13~20
 				if(!obj.getScheduledDeliveryTime().isEmpty())
 					if(Integer.parseInt(obj.getScheduledDeliveryTime()) <= 1 && Integer.parseInt(obj.getScheduledDeliveryTime()) >= 23)
 						throw new EcpayException("ScheduledDeliveryTime cannot be "+obj.getScheduledDeliveryTime()+" when LogisticsSubType is TCAT.");
-				// [LogisticsSubType]¬°TCAT => ScheduledPickupTime ¤£¥i¬°ªÅ
+				// [LogisticsSubType]ç‚ºTCAT => ScheduledPickupTime ä¸å¯ç‚ºç©º
 				if(obj.getScheduledPickupTime().isEmpty())
 					throw new EcpayException("ScheduledPickupTime cannot be empty when LogisticsSubType is TCAT.");
 			}
-			// [Temperature]¬°0003§N­á => Specification ¤£¯à¬° 0004:150cm
+			// [Temperature]ç‚º0003å†·å‡ => Specification ä¸èƒ½ç‚º 0004:150cm
 			if(obj.getTemperature().equals("0003"))
 				if(obj.getSpecification().equals("0004"))
 					throw new EcpayException("Specifications cannot be 0004 when Temperature is 0003.");
@@ -281,10 +281,10 @@ public class LogisticsVerifyBase {
 	}
 	
 	public void verifyReturnCVS(ReturnCVSObj obj){
-		// °Ó«~¦WºÙ¤£¥i¥H¦³³æ¤Ş¸¹¸òÂù¤Ş¸¹
+		// å•†å“åç¨±ä¸å¯ä»¥æœ‰å–®å¼•è™Ÿè·Ÿé›™å¼•è™Ÿ
 		if(Pattern.matches("[\'\"]+", obj.getGoodsName()))
 			throw new EcpayException("GoodsName cannot contain quotation marks.");
-		// °Ó«~¦WºÙ§t¦³¤«¦r => »{¬°¬O¦h¼Ë°Ó«~ *GoodsName¡A *Quantity ¡A*Cost³v¤@¥Î¤«¦r¤À³Î¡A­pºâ¼Æ¶q«á»P²Ä¤@­Ó¤ñ¹ï
+		// å•†å“åç¨±å«æœ‰äº•å­— => èªç‚ºæ˜¯å¤šæ¨£å•†å“ *GoodsNameï¼Œ *Quantity ï¼Œ*Costé€ä¸€ç”¨äº•å­—åˆ†å‰²ï¼Œè¨ˆç®—æ•¸é‡å¾Œèˆ‡ç¬¬ä¸€å€‹æ¯”å°
 		String[] itemParams = {"GoodsName", "Quantity", "Cost"};
 		if(obj.getGoodsName().contains("#")){
 			int itemCount = obj.getGoodsName().split("#").length;
@@ -304,7 +304,7 @@ public class LogisticsVerifyBase {
 				}
 			}
 		} else{
-			// ¨S¦³ºŞ½u => ³v¤@ÀË¬d@item_params_listªºÄæ¦ì¦³µLºŞ½u
+			// æ²’æœ‰ç®¡ç·š => é€ä¸€æª¢æŸ¥@item_params_listçš„æ¬„ä½æœ‰ç„¡ç®¡ç·š
 			for(String tmp : itemParams){
 				Method method;
 				try {
@@ -320,7 +320,7 @@ public class LogisticsVerifyBase {
 	}
 	
 	public void verifyReturnHiLifeCVS(ReturnHiLifeCVSObj obj){
-		// °Ó«~¦WºÙ¤£¥i¥H¦³³æ¤Ş¸¹¸òÂù¤Ş¸¹
+		// å•†å“åç¨±ä¸å¯ä»¥æœ‰å–®å¼•è™Ÿè·Ÿé›™å¼•è™Ÿ
 		if(Pattern.matches("[\'\"]+", obj.getGoodsName()))
 			throw new EcpayException("GoodsName cannot contain quotation marks.");
 		if(!Pattern.matches("^([\\u4e00-\\u9fa5\\w]{0,30}|[\\w]{0,60})$", obj.getGoodsName()))
@@ -328,7 +328,7 @@ public class LogisticsVerifyBase {
 	}
 	
 	public void verifyReturnUniMartCVS(ReturnUniMartCVSObj obj){
-		// °Ó«~¦WºÙ¤£¥i¥H¦³³æ¤Ş¸¹¸òÂù¤Ş¸¹
+		// å•†å“åç¨±ä¸å¯ä»¥æœ‰å–®å¼•è™Ÿè·Ÿé›™å¼•è™Ÿ
 		if(Pattern.matches("[\'\"]+", obj.getGoodsName()))
 			throw new EcpayException("GoodsName cannot contain quotation marks.");
 	}
