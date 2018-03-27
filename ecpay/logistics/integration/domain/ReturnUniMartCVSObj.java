@@ -132,14 +132,14 @@ public class ReturnUniMartCVSObj {
 		GoodsName = goodsName;
 	}
 	/**
-	 * 取得GoodsAmount 商品金額 金額範圍為 1~19,999 元 此為商品遺失賠償依據，僅可使用數字
+	 * 取得GoodsAmount 商品金額 金額範圍為 1~20,000 元 此為商品遺失賠償依據，僅可使用數字
 	 * @return GoodsAmount
 	 */
 	public String getGoodsAmount() {
 		return GoodsAmount;
 	}
 	/**
-	 * 設定GoodsAmount 商品金額 金額範圍為 1~19,999 元 此為商品遺失賠償依據，僅可使用數字
+	 * 設定GoodsAmount 商品金額 金額範圍為 1~20,000 元 此為商品遺失賠償依據，僅可使用數字
 	 * @param goodsAmount
 	 */
 	public void setGoodsAmount(String goodsAmount) {

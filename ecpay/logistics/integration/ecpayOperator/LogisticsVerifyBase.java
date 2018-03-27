@@ -88,9 +88,6 @@ public class LogisticsVerifyBase {
 				throw new EcpayException("LogisticsSubType cannot be "+((CreateCVSObj) obj).getLogisticsSubType()+" when LogisticsType is CVS.");
 			//[LogisticsSubType]為UNIMART => UNIMART相關規則
 			else if(((CreateCVSObj) obj).getLogisticsSubType().equals("UNIMART")){
-				// [LogisticsSubType]為UNIMART => GoodsAmount must be Between 1 and 19,999
-				if(Integer.parseInt(((CreateCVSObj) obj).getGoodsAmount()) > 19999 || Integer.parseInt(((CreateCVSObj) obj).getGoodsAmount()) < 1)
-					throw new EcpayException("GoodsAmount cannot be "+((CreateCVSObj) obj).getGoodsAmount()+" when LogisticsSubType is UNIMART.");
 				// [LogisticsSubType]為UNIMART => ReceiverCellPhone Can Not be empty
 				if(((CreateCVSObj) obj).getReceiverCellPhone().isEmpty())
 					throw new EcpayException("ReceiverCellPhone cannot be empty when LogisticsSubType is UNIMART.");
@@ -121,9 +118,6 @@ public class LogisticsVerifyBase {
 					throw new EcpayException("ReturnStoreID must be empty when LogisticsSubType is HILIFE.");
 			// [LogisticsSubType]為UNIMARTC2C => UNIMARTC2C相關規則
 			} else if(((CreateCVSObj) obj).getLogisticsSubType().equals("UNIMARTC2C")){
-				// [LogisticsSubType]為UNIMARTC2C => GoodsAmount must be Between 1 and 19,999
-				if(Integer.parseInt(((CreateCVSObj) obj).getGoodsAmount()) > 19999 || Integer.parseInt(((CreateCVSObj) obj).getGoodsAmount()) < 1)
-					throw new EcpayException("GoodsAmount cannot be "+((CreateCVSObj) obj).getGoodsAmount()+" when LogisticsSubType is UNIMARTC2C.");
 				// [LogisticsSubType]為UNIMARTC2C => GoodsAmount must be equal CollectionAmount
 				if(!((CreateCVSObj) obj).getCollectionAmount().isEmpty())
 					if(!((CreateCVSObj) obj).getGoodsAmount().equals(((CreateCVSObj) obj).getCollectionAmount()))
