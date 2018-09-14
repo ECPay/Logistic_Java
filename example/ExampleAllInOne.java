@@ -25,24 +25,24 @@ public class ExampleAllInOne {
 	public static AllInOne all;
 	public static void main(String[] args){
 		initial();
-		System.out.println("compare CheckMacValue method testing result: "+cmprChkMacValue());
-		System.out.println("expressMap: "+postExpressMap());
+//		System.out.println("compare CheckMacValue method testing result: "+cmprChkMacValue());
+//		System.out.println("expressMap: "+postExpressMap());
 		System.out.println("createCVS: "+postCreateCVS());
-		System.out.println("createHome: "+postCreateHome());
-		System.out.println("returnHome: "+postReturnHome());
-		System.out.println("returnCVS: "+postReturnCVS());
-		System.out.println("logisticsCheckAccounts: "+postLogisticsCheckAccount());
-		System.out.println("returnHiLifeCVS: "+postReturnHiLifeCVS());
-		System.out.println("returnUniMartCVS: "+postReturnUniMartCVS());
-		System.out.println("updateShipmentInfo: "+postUpdateShipmentInfo());
-		System.out.println("updateStoreInfo: "+postUpdateStoreInfor());
-		System.out.println("cancelC2COrder: "+postCancelC2COrder());
-		System.out.println("queryLogisticsTradeInfo: "+postQueryLogisticsTradeInfo());
-		System.out.println("printTradeDocument: "+postPrintTradeDocument());
-		System.out.println("printUniMartC2COrderInfo: "+postPrintUniMartC2COrderInfo());
-		System.out.println("printFAMIC2COrderInfo: "+postPrintFAMIC2COrderInfo());
-		System.out.println("printHILIFEC2COrder: "+postPrintHILIFEC2COrderInfo());
-		System.out.println("createTestData: "+postCreateTestData());
+//		System.out.println("createHome: "+postCreateHome());
+//		System.out.println("returnHome: "+postReturnHome());
+//		System.out.println("returnCVS: "+postReturnCVS());
+//		System.out.println("logisticsCheckAccounts: "+postLogisticsCheckAccount());
+//		System.out.println("returnHiLifeCVS: "+postReturnHiLifeCVS());
+//		System.out.println("returnUniMartCVS: "+postReturnUniMartCVS());
+//		System.out.println("updateShipmentInfo: "+postUpdateShipmentInfo());
+//		System.out.println("updateStoreInfo: "+postUpdateStoreInfor());
+//		System.out.println("cancelC2COrder: "+postCancelC2COrder());
+//		System.out.println("queryLogisticsTradeInfo: "+postQueryLogisticsTradeInfo());
+//		System.out.println("printTradeDocument: "+postPrintTradeDocument());
+//		System.out.println("printUniMartC2COrderInfo: "+postPrintUniMartC2COrderInfo());
+//		System.out.println("printFAMIC2COrderInfo: "+postPrintFAMIC2COrderInfo());
+//		System.out.println("printHILIFEC2COrder: "+postPrintHILIFEC2COrderInfo());
+//		System.out.println("createTestData: "+postCreateTestData());
 	}
 	
 	private static void initial(){
@@ -70,7 +70,8 @@ public class ExampleAllInOne {
 		obj.setMerchantTradeDate("2018/03/09 05:05:05");
 		obj.setLogisticsSubType("UNIMART");
 		obj.setGoodsAmount("20000");
-		obj.setSenderName("測試先生");
+		obj.setGoodsName("asd");
+		obj.setSenderName("測試");
 		obj.setReceiverName("Ying");
 		obj.setReceiverCellPhone("0911429215");
 		obj.setServerReplyURL("https://www.yahoo.com.tw");

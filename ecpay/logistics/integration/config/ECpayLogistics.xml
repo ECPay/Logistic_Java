@@ -52,7 +52,7 @@
         <pattern>^.{0,50}$</pattern>
       </param>
       <param type="String"  require="1" name="SenderName">
-        <pattern>^([\u4e00-\u9fa5]{1,5}|[a-zA-Z]{1,10})$</pattern>
+        <pattern>^.{0,50}$</pattern>
       </param>
       <param type="String"  require="0" name="SenderPhone">
         <pattern>^([\d\(\)\#\-]{0,20}|)$</pattern>
@@ -61,7 +61,7 @@
         <pattern>^([0]{1}[9]{1}\d{2,8}|)$</pattern>
       </param>
       <param type="String"  require="1" name="ReceiverName">
-        <pattern>^([\u4e00-\u9fa5]{1,5}|[a-zA-Z]{1,10})$</pattern>
+        <pattern>^.{0,50}$</pattern>
       </param>
       <param type="String"  require="0" name="ReceiverPhone">
         <pattern>^([\d\(\)\#\-]{0,20}|)$</pattern>
@@ -362,7 +362,7 @@
         <pattern>^.{0,200}$</pattern>
       </param>
       <param type="String"  require="0" name="SenderName">
-        <pattern>^([\u4e00-\u9fa5]{1,5}|[a-zA-Z]{1,10}|)$</pattern>
+        <pattern>^.{0,50}$</pattern>
       </param>
       <param type="String"  require="0" name="SenderPhone">
         <pattern>^([\d\(\)\#\-]{0,20}|)$</pattern>
@@ -377,7 +377,7 @@
         <pattern>^.{0,200}$</pattern>
       </param>
       <param type="String"  require="0" name="ReceiverName">
-        <pattern>^([\u4e00-\u9fa5]{1,5}|[a-zA-Z]{1,10}|)$</pattern>
+        <pattern>^.{0,50}$</pattern>
       </param>
       <param type="String"  require="0" name="ReceiverPhone">
         <pattern>^([\d\(\)\#\-]{0,20}|)$</pattern>
