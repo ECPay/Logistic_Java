@@ -1,30 +1,30 @@
-# ��ɬ�� �����(All In One)���y��X����Java�Ĥ@��
+# 綠界科技 全方位(All In One)物流整合介接Java第一版
 ---
 
-## 1. ����
+## 1. 介紹
 
-  - ��ɬ�ު��y���ѷ|����K�ֳt���ӫ~�B�e����A�ثe�W�Ө��f�A�ȴ��ѡu���a�K�Q�W�ӡv�B�u�Τ@�W�ӡv�B�u�ܺ��I�v�A�v�t�A�ȴ��ѡu�¿ߦv�t�v�B�u�v�t�q�v�C ���M��RoR���A�i�ϥΧ@�إߪ��y�q��A�q�l�a�Ϧ걵�A�f���y�q�浥���ΡC
-  - ���ͪ��y�q��G
-    - B2C���a�K�Q�W��
-    - B2C�Τ@�W��
-    - B2C�ܺ��I
-    - C2C���a���쩱
-    - C2C�Τ@�W�ӥ�f�K
-    - C2C�ܺ��I���쩱
-	- HOME�¿ߦv�t
-	- HOME�v�t�q
+  - 綠界科技物流提供會員方便快速的商品運送機制，目前超商取貨服務提供「全家便利超商」、「統一超商」、「萊爾富」，宅配服務提供「黑貓宅配」、「宅配通」。 本套件為RoR版，可使用作建立物流訂單，電子地圖串接，逆物流訂單等應用。
+  - 產生物流訂單：
+    - B2C全家便利超商
+    - B2C統一超商
+    - B2C萊爾富
+    - C2C全家店到店
+    - C2C統一超商交貨便
+    - C2C萊爾富店到店
+	- HOME黑貓宅配
+	- HOME宅配通
 
 
-## 2. �w������
-  - _jdk 1.6�H�W_
+## 2. 安裝環境
+  - _jdk 1.6以上_
  
 
-## 3. �ϥαо�
-  - �ϥΪ̤���m��Doc��Ƨ����A�i�ѰѾ\
+## 3. 使用教學
+  - 使用者文件放置於Doc資料夾內，可供參閱
 
 
-## 4. �p���ڭ�
-  - ��ɧ޳N�ȪA�H�c: techsupport@ecpay.com.tw
+## 4. 聯絡我們
+  - 綠界技術服務工程師信箱: techsupport@ecpay.com.tw
 
 
 
