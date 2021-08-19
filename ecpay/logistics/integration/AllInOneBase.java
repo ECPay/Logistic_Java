@@ -35,6 +35,7 @@ public class AllInOneBase {
 	protected static String printUniMartC2COrderInfoUrl;
 	protected static String printFAMIC2COrderInfoUrl;
 	protected static String printHILIFEC2COrderInfoUrl;
+	protected static String printOKMARTC2COrderInfoUrl;
 	protected static Document verifyDoc;
 	public AllInOneBase(){
 //		try{

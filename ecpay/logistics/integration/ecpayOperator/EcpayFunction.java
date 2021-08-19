@@ -35,7 +35,7 @@ import ecpay.logistics.integration.errorMsg.ErrorMessage;
 import ecpay.logistics.integration.exception.EcpayException;
 
 /**
- * ¦@¥Î¨ç¦¡Ãş§O
+ * å…±ç”¨å‡½å¼é¡åˆ¥
  * @author mark.chiu
  *
  */
@@ -43,7 +43,7 @@ public class EcpayFunction {
 	private final static char[] hexArray = "0123456789ABCDEF".toCharArray();
 	
 	/**
-	 * ²£¥ÍÀË¬d½X
+	 * ç”¢ç”Ÿæª¢æŸ¥ç¢¼
 	 * @param key
 	 * @param iv
 	 * @param obj
@@ -69,7 +69,7 @@ public class EcpayFunction {
 	}
 	
 	/**
-	 * ²£¥ÍÀË¬d½X
+	 * ç”¢ç”Ÿæª¢æŸ¥ç¢¼
 	 * @param key
 	 * @param iv
 	 * @param Hashtable<String, String> params
@@ -92,7 +92,7 @@ public class EcpayFunction {
 	}
 	
 	/**
-	 * ±Nª«¥óªºÄİ©Ê»PÀË¬d½X²Õ¦X¦¨httpªº°Ñ¼Æ¸ê®Æ®æ¦¡
+	 * å°‡ç‰©ä»¶çš„å±¬æ€§èˆ‡æª¢æŸ¥ç¢¼çµ„åˆæˆhttpçš„åƒæ•¸è³‡æ–™æ ¼å¼
 	 * @param obj
 	 * @param CheckMacValue
 	 * @return string
@@ -115,7 +115,7 @@ public class EcpayFunction {
 	}
 	
 	/**
-	 * ±Nª«¥óÂà¬°Hashtable
+	 * å°‡ç‰©ä»¶è½‰ç‚ºHashtable
 	 * @param obj
 	 * @return Hashtable
 	 */
@@ -144,7 +144,7 @@ public class EcpayFunction {
 	}
 	
 	/**
-	 * client http postªº¥\¯à
+	 * client http postçš„åŠŸèƒ½
 	 * @param url
 	 * @param urlParameters
 	 * @return response string
@@ -154,8 +154,8 @@ public class EcpayFunction {
 			URL obj = new URL(url);
 			HttpURLConnection connection = null;
 			if (obj.getProtocol().toLowerCase().equals("https")) {
-				trustAllHosts();
 				connection = (HttpsURLConnection) obj.openConnection();
+				trustAllHosts((HttpsURLConnection) connection);
 			}
 			else {
 				connection = (HttpURLConnection) obj.openConnection();
@@ -182,7 +182,7 @@ public class EcpayFunction {
 	}
 	
 	/**
-	 * ²£¥Í Unix TimeStamp
+	 * ç”¢ç”Ÿ Unix TimeStamp
 	 * @return TimeStamp
 	 */
 	public final static String genUnixTimeStamp(){
@@ -204,9 +204,9 @@ public class EcpayFunction {
 	}
 	
 	/**
-	 * https ³B²z
+	 * https è™•ç†
 	 */
-	private static void trustAllHosts() {
+	private static void trustAllHosts(HttpsURLConnection connection) {
 	    X509TrustManager easyTrustManager = new X509TrustManager() {
 	        public void checkClientTrusted(
 	                X509Certificate[] chain,
@@ -228,7 +228,7 @@ public class EcpayFunction {
 	    try {
 	        SSLContext sc = SSLContext.getInstance("TLS");
 	        sc.init(null, trustAllCerts, new java.security.SecureRandom());
-	        HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
+	        connection.setSSLSocketFactory(sc.getSocketFactory());
 	    } 
 	    catch (Exception e) {
 	    	e.printStackTrace();
@@ -236,7 +236,7 @@ public class EcpayFunction {
 	}
 	
 	/**
-	 * °w¹ïª«¥ó¤ºÄİ©Êªº°Ñ¼Æ§@±Æ§Ç
+	 * é‡å°ç‰©ä»¶å…§å±¬æ€§çš„åƒæ•¸ä½œæ’åº
 	 * @param Class
 	 * @return List
 	 */
@@ -251,7 +251,7 @@ public class EcpayFunction {
 	}
 	
 	/**
-	 * ±N¸ê®Æ°µ urlEncode½s½X
+	 * å°‡è³‡æ–™åš urlEncodeç·¨ç¢¼
 	 * @param data
 	 * @return url encoded string
 	 */
@@ -265,7 +265,7 @@ public class EcpayFunction {
 	}
 	
 	/**
-	 * ±N°µ§¹ªºurlEncode¦r¦ê°µÂà´«²Å¦X .NET»y¨¥ªºÂà´«³W«h
+	 * å°‡åšå®Œçš„urlEncodeå­—ä¸²åšè½‰æ›ç¬¦åˆ .NETèªè¨€çš„è½‰æ›è¦å‰‡
 	 * @param url
 	 * @return .Net url encoded string
 	 */
@@ -275,7 +275,7 @@ public class EcpayFunction {
 	}
 	
 	/**
-	 * ±N byte array ¸ê®Æ°µ hash md5©Î sha256 ¹Bºâ¡A¨Ã¦^¶Ç hex­Èªº¦r¦ê¸ê®Æ
+	 * å°‡ byte array è³‡æ–™åš hash md5æˆ– sha256 é‹ç®—ï¼Œä¸¦å›å‚³ hexå€¼çš„å­—ä¸²è³‡æ–™
 	 * @param data
 	 * @param isMD5
 	 * @return string
@@ -295,7 +295,7 @@ public class EcpayFunction {
 	}
 	
 	/**
-	 * ±N byte array ¸ê®ÆÂà´«¦¨ hex¦r¦ê­È
+	 * å°‡ byte array è³‡æ–™è½‰æ›æˆ hexå­—ä¸²å€¼
 	 * @param bytes
 	 * @return string
 	 */

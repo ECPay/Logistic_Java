@@ -15,6 +15,7 @@ import ecpay.logistics.integration.domain.ExpressMapObj;
 import ecpay.logistics.integration.domain.LogisticsCheckAccountsObj;
 import ecpay.logistics.integration.domain.PrintFAMIC2COrderInfoObj;
 import ecpay.logistics.integration.domain.PrintHILIFEC2COrderInfoObj;
+import ecpay.logistics.integration.domain.PrintOKMARTC2COrderInfoObj;
 import ecpay.logistics.integration.domain.PrintTradeDocumentObj;
 import ecpay.logistics.integration.domain.PrintUniMartC2COrderInfoObj;
 import ecpay.logistics.integration.domain.QueryLogisticsTradeInfoObj;
@@ -34,6 +35,7 @@ import ecpay.logistics.integration.verification.VerifyLogisticsCheckAccounts;
 import ecpay.logistics.integration.verification.VerifyMap;
 import ecpay.logistics.integration.verification.VerifyPrintFAMIC2COrderInfo;
 import ecpay.logistics.integration.verification.VerifyPrintHILIFEC2COrderInfo;
+import ecpay.logistics.integration.verification.VerifyPrintOKMARTC2COrderInfo;
 import ecpay.logistics.integration.verification.VerifyPrintTradeDocument;
 import ecpay.logistics.integration.verification.VerifyPrintUniMartC2COrderInfo;
 import ecpay.logistics.integration.verification.VerifyQueryLogisticsTradeInfo;
@@ -537,6 +539,20 @@ public class AllInOne extends AllInOneBase{
 		printHILIFEC2COrderInfoUrl = verify.getAPIUrl(operatingMode);
 		verify.verifyParams(obj);
 		return genHtmlCode(obj, printHILIFEC2COrderInfoUrl, true);
+	}
+	public String printOKMARTC2COrderInfo(PrintOKMARTC2COrderInfoObj obj){
+		obj.setPlatformID(PlatformID);
+		if(!PlatformID.isEmpty() && obj.getMerchantID().isEmpty()){
+			obj.setMerchantID(MerchantID);
+		} else if(!PlatformID.isEmpty() && !obj.getMerchantID().isEmpty()){
+		} else{
+			obj.setMerchantID(MerchantID);
+		}
+		log.info("PrintOKMARTC2COrderInfo params: "+obj.toString());
+		VerifyPrintOKMARTC2COrderInfo verify = new VerifyPrintOKMARTC2COrderInfo();
+		printOKMARTC2COrderInfoUrl = verify.getAPIUrl(operatingMode);
+		verify.verifyParams(obj);
+		return genHtmlCode(obj, printOKMARTC2COrderInfoUrl, true);
 	}
 	
 	/**

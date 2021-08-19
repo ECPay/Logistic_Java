@@ -11,6 +11,7 @@ import ecpay.logistics.integration.domain.ExpressMapObj;
 import ecpay.logistics.integration.domain.LogisticsCheckAccountsObj;
 import ecpay.logistics.integration.domain.PrintFAMIC2COrderInfoObj;
 import ecpay.logistics.integration.domain.PrintHILIFEC2COrderInfoObj;
+import ecpay.logistics.integration.domain.PrintOKMARTC2COrderInfoObj;
 import ecpay.logistics.integration.domain.PrintTradeDocumentObj;
 import ecpay.logistics.integration.domain.PrintUniMartC2COrderInfoObj;
 import ecpay.logistics.integration.domain.QueryLogisticsTradeInfoObj;
@@ -26,8 +27,7 @@ public class ExampleAllInOne {
 	public static void main(String[] args){
 		initial();
 //		System.out.println("compare CheckMacValue method testing result: "+cmprChkMacValue());
-//		System.out.println("expressMap: "+postExpressMap());
-		System.out.println("createCVS: "+postCreateCVS());
+		System.out.println("expressMap: "+postExpressMap());//		System.out.println("createCVS: "+postCreateCVS());
 //		System.out.println("createHome: "+postCreateHome());
 //		System.out.println("returnHome: "+postReturnHome());
 //		System.out.println("returnCVS: "+postReturnCVS());
@@ -42,6 +42,7 @@ public class ExampleAllInOne {
 //		System.out.println("printUniMartC2COrderInfo: "+postPrintUniMartC2COrderInfo());
 //		System.out.println("printFAMIC2COrderInfo: "+postPrintFAMIC2COrderInfo());
 //		System.out.println("printHILIFEC2COrder: "+postPrintHILIFEC2COrderInfo());
+//		System.out.println("printOKMARTC2COrder: "+postPrintOKMARTC2COrderInfo());
 //		System.out.println("createTestData: "+postCreateTestData());
 	}
 	
@@ -58,7 +59,7 @@ public class ExampleAllInOne {
 	
 	public static String postExpressMap(){
 		ExpressMapObj obj = new ExpressMapObj();
-		obj.setLogisticsSubType("FAMI");
+		obj.setLogisticsSubType("OKMARTC2C");
 		obj.setIsCollection("N");
 		obj.setServerReplyURL("https://www.yahoo.com.tw");
 		return all.expressMap(obj);
@@ -66,16 +67,17 @@ public class ExampleAllInOne {
 	
 	public static String postCreateCVS(){
 		CreateCVSObj obj = new CreateCVSObj();
-		obj.setMerchantTradeNo("");
-		obj.setMerchantTradeDate("2018/03/09 05:05:05");
-		obj.setLogisticsSubType("UNIMART");
-		obj.setGoodsAmount("20000");
+		obj.setMerchantTradeNo("ECPAT202XA70xzx1");
+		obj.setMerchantTradeDate("2021/01/27 05:05:05");
+		obj.setLogisticsSubType("OKMARTC2C");
+		obj.setGoodsAmount("100");
 		obj.setGoodsName("asd");
-		obj.setSenderName("ด๚ธี");
+		obj.setSenderName("test");
 		obj.setReceiverName("Ying");
 		obj.setReceiverCellPhone("0911429215");
 		obj.setServerReplyURL("https://www.yahoo.com.tw");
-		obj.setReceiverStoreID("991182");
+		obj.setReceiverStoreID("001328");
+		obj.setSenderCellPhone("0912345678");
 		return all.create(obj);
 	}
 	
@@ -216,7 +218,12 @@ public class ExampleAllInOne {
 		obj.setCVSPaymentNo("76RE05280526");
 		return all.printHILIFEC2COrderInfo(obj);
 	}
-	
+	public static String postPrintOKMARTC2COrderInfo(){
+		PrintOKMARTC2COrderInfoObj obj = new PrintOKMARTC2COrderInfoObj();
+		obj.setAllPayLogisticsID("1682318");
+		obj.setCVSPaymentNo("W3383770105");
+		return all.printOKMARTC2COrderInfo(obj);
+	}
 	public static String postCreateTestData(){
 		CreateTestDataObj obj = new CreateTestDataObj();
 		obj.setLogisticsSubType("FAMI");
